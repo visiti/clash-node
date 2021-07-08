@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+rule-providers:
+#广告域名列表
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+#白名单
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+#中国大陆 IPv4 地址列表
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/CN-ip-cidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+#局域网 IP 及保留 IP 地址列表
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
+  #- GEOIP,CN,DIRECT,no-resolve
+  - MATCH,自动选择
+
+proxies:
+  - {"name":"日本 -L1 JPGIA","type":"vmess","server":"jp.ilaosiji.xyz","port":10040,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"pull.free.video.10010.com"}}
+  - {"name":"香港 -L1 HKD 联通免流节点","type":"vmess","server":"16.hk.ilaosiji.xyz","port":8080,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/index","ws-headers":{"Host":"pull.free.video.10010.com"}}
+  - {"name":"香港 -L1 HKCN2","type":"vmess","server":"jm.nkeo.top","port":53935,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/india","ws-headers":{"Host":"pull.free.video.10010.com"}}
+  - {name: 香港01, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: true, udp: true}
+  - {name: 法国02, server: 51.195.62.220, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - cipher: chacha20-ietf-poly1305
+    name: 🇺🇸 2
+    password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
+    port: 18334
+    server: 154.17.2.142
+    type: ss
+  - cipher: chacha20-ietf-poly1305
+    name: 🇺🇸 1
+    password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
+    port: 18333
+    server: 154.17.2.141
+    type: ss
+proxy-groups:
+  - name: 自动选择
+    interval: 300
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - '日本 -L1 JPGIA'
+      - '香港 -L1 HKD 联通免流节点'
+      - '香港 -L1 HKCN2'
+      - 香港01
+      - 法国02
+      - 🇺🇸 2
+      - 🇺🇸 1
