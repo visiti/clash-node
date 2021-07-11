@@ -5,6 +5,44 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 
+dns:
+    enable: true
+    ipv6: false
+    # listen: 0.0.0.0:53
+    enhanced-mode: redir-host
+    use-hosts: true
+    fake-ip-filter:
+      - 'dns.msftncsi.com'
+      - 'www.msftncsi.com'
+      - 'www.msftconnecttest.com'
+      - '+.qq.com'
+      - '+.music.163.com'
+      - '+.music.162.com'
+    default-nameserver:
+      - 119.29.29.29
+      - 114.114.114.114
+      - 8.8.8.8
+    nameserver:
+      - 119.29.29.29
+      - 223.5.5.5
+      - 8.8.8.8
+      - 114.114.114.114
+      - 1.1.1.1
+    fallback:
+      - 'https://1.1.1.1/dns-query'
+      - 'https://162.159.36.1/dns-query'
+      - 'https://162.14.13.12/dns-query'
+      - 'tls://dns.rubyfish.cn:853'
+      - 'tls://1.0.0.1:853'
+      - 'tls://dns.google:853'
+    fallback-filter:
+      geoip: true
+      ipcidr:
+        - 0.0.0.0/32
+        - 127.0.0.0/8
+        - 240.0.0.0/4
+
+
 rule-providers:
 #广告域名列表
   reject:
@@ -12,14 +50,6 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/reject.yaml
-    interval: 86400
-
-#白名单
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./ruleset/gfw.yaml
     interval: 86400
 
 #中国大陆 IPv4 地址列表
@@ -39,7 +69,6 @@ rule-providers:
 
 rules:
   - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
   - RULE-SET,lancidr,DIRECT,no-resolve
   - RULE-SET,cncidr,DIRECT,no-resolve
   #- GEOIP,CN,DIRECT,no-resolve
@@ -47,32 +76,121 @@ rules:
 
 proxies:
   - {"name":"日本 -L1 JPGIA","type":"vmess","server":"jp.ilaosiji.xyz","port":10040,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-headers":{"Host":"pull.free.video.10010.com"}}
-  - {"name":"香港 -L1 HKD 联通免流节点","type":"vmess","server":"16.hk.ilaosiji.xyz","port":8080,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/index","ws-headers":{"Host":"pull.free.video.10010.com"}}
-  - {"name":"香港 -L1 HKCN2","type":"vmess","server":"jm.nkeo.top","port":53935,"uuid":"f4b372e7-05f5-36e5-b859-dbc58d3e224f","alterId":2,"cipher":"auto","udp":true,"network":"ws","ws-path":"/india","ws-headers":{"Host":"pull.free.video.10010.com"}}
-  - {name: 香港01, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 1, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, skip-cert-verify: true, udp: true}
   - {name: 法国02, server: 51.195.62.220, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - cipher: chacha20-ietf-poly1305
-    name: 🇺🇸 2
-    password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-    port: 18334
-    server: 154.17.2.142
-    type: ss
-  - cipher: chacha20-ietf-poly1305
-    name: 🇺🇸 1
-    password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-    port: 18333
-    server: 154.17.2.141
-    type: ss
+  - {name: 匈牙利 1, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 1, server: 18.157.179.71, port: 443, type: vmess, uuid: 81dd574d-8d47-4b31-9f5a-3f638b427842, alterId: 64, cipher: auto, tls: false}
+  - {name:  1, server: 91.90.123.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name:  2, server: 195.47.194.42, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇷🇴 1, server: 195.47.194.42, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 3, server: 195.47.194.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 4, server: 195.47.194.42, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 2, server: 154.17.2.142, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 3, server: 198.8.92.84, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
+  - {name: 5, server: 195.47.194.42, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇷🇴 2, server: 195.47.194.42, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 6, server: 51.195.62.220, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 7, server: 51.195.62.220, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 8, server: 198.147.22.87, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: 罗马 1, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 罗马 2, server: 91.90.123.115, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 罗马 3, server: 91.90.123.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 罗马 4, server: 91.90.123.115, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 罗马 5, server: 91.90.123.115, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇺🇸 4, server: 198.147.22.87, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 罗马 6, server: 91.90.123.115, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 罗马 7, server: 91.90.123.115, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 罗马 8, server: 91.90.123.115, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇹 1, server: 82.102.26.117, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇹 2, server: 82.102.26.117, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 克罗地亚 1, server: 85.10.50.164, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 5, server: 84.17.35.78, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 罗马 9, server: 91.90.123.115, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 罗马 10, server: 91.90.123.115, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇺🇸 6, server: 198.8.92.84, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 7, server: 198.8.92.84, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 罗马 11, server: 91.90.123.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇩🇪 1, server: 51.89.99.59, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇳🇱 1, server: 89.46.223.239, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇩🇪 2, server: 51.195.62.220, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 罗马 12, server: 91.90.123.115, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇺🇸 8, server: 104.200.131.165, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 克罗地亚 2, server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 罗马 13, server: 91.90.123.115, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇬🇧 1, server: 185.44.76.188, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 罗马 14, server: 91.90.123.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇷🇺 1, server: ru-a-01.joker007.top, port: 80, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 罗马 15, server: 91.90.123.115, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 罗马 16, server: 91.90.123.115, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 罗马 17, server: 195.47.194.42, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 罗马 18, server: 195.47.194.42, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 罗马 19, server: 195.47.194.42, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 罗马 20, server: 195.47.194.42, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 罗马 21, server: 195.47.194.42, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 罗马 22, server: 195.47.194.42, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 罗马 23, server: 195.47.194.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 罗马 24, server: 91.90.123.115, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 罗马 25, server: 91.90.123.115, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+
 proxy-groups:
   - name: 自动选择
     interval: 300
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
       - '日本 -L1 JPGIA'
-      - '香港 -L1 HKD 联通免流节点'
-      - '香港 -L1 HKCN2'
-      - 香港01
+      - 🇭🇰 1
       - 法国02
-      - 🇺🇸 2
+      - 匈牙利 1
       - 🇺🇸 1
+      - 🇺🇸 2
+      - 🇺🇸 3
+      - 🇺🇸 4
+      - 🇺🇸 5
+      - 🇺🇸 6
+      - 🇺🇸 7
+      - 🇺🇸 8
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 🇷🇴 1
+      - 🇷🇴 2
+      - 罗马 1
+      - 罗马 2
+      - 罗马 3
+      - 罗马 4
+      - 罗马 5
+      - 罗马 6
+      - 罗马 7
+      - 罗马 8
+      - 罗马 9
+      - 罗马 10
+      - 罗马 11
+      - 罗马 12
+      - 罗马 13
+      - 罗马 14
+      - 罗马 15
+      - 罗马 16
+      - 罗马 17
+      - 罗马 18
+      - 罗马 19
+      - 罗马 20
+      - 罗马 21
+      - 罗马 22
+      - 罗马 23
+      - 罗马 24
+      - 罗马 25
+      -  🇮🇹 1
+      -  🇮🇹 2
+      - 🇩🇪 1
+      - 🇩🇪 2
+      - 🇳🇱 1
+      - 克罗地亚 1
+      - 克罗地亚 2
+      - 🇬🇧 1
+      - 🇷🇺 1
