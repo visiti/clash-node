@@ -7,7 +7,9 @@ export function readNodes(dirPath = 'src/nodes/') {
         const proxies = [];
         const proxiesSet = new Set();
         files.forEach(file => {
-            let clashNodes = YAML.parse(fs.readFileSync(dirPath + file, 'utf-8')).proxies;
+            let clashConfig = YAML.parse(fs.readFileSync(dirPath + file, 'utf-8'));
+            if (!clashConfig || !clashConfig.proxies) { return }
+            let clashNodes = clashConfig.proxies;
             for (const clashNode of clashNodes) {
                 let vpnID = `${clashNode.server}:${clashNode.port}`
                 if (proxiesSet.has(proxiesSet.has(vpnID))) {

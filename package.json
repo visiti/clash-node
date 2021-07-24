@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "delay": "node src/lib/filterWithDelay.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,9 @@
   },
   "homepage": "https://github.com/visiti/clash-node#readme",
   "dependencies": {
+    "rxjs": "^7.2.0",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0",
     "yaml": "^1.10.2"
   }
 }
