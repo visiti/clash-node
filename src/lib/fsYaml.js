@@ -7,7 +7,7 @@ export function readNodes(dirPath = 'src/nodes/') {
         const proxies = [];
         const proxiesSet = new Set();
         files.forEach(file => {
-            let clashConfig = YAML.parse(fs.readFileSync(dirPath + file, 'utf-8'));
+            let clashConfig = readYaml(dirPath + file)
             if (!clashConfig || !clashConfig.proxies) { return }
             let clashNodes = clashConfig.proxies;
             for (const clashNode of clashNodes) {
@@ -35,4 +35,8 @@ export function writeNode(bolb, path = './clash-node.yaml', templatePath = 'src/
     } catch (error) {
         console.log(error);
     }
+}
+
+export function readYaml(path) {
+    return YAML.parse(fs.readFileSync(path, 'utf-8'));
 }
