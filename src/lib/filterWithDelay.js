@@ -6,7 +6,7 @@ const XHR2 = typeof XMLHttpRequest !== 'undefined' ? XMLHttpRequest : xhr2
 
 // 接口地址 host（127.0.0.1） + 控制端口
 ajax({
-    url: "http://127.0.0.1:33526/proxies",
+    url: "http://127.0.0.1:9090/proxies",
     createXHR: () => new XHR2(),
     method: 'GET',
 }).pipe(
