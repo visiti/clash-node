@@ -26,278 +26,1139 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
-  - name: 🇺🇸 美国 1
-    server: 89.187.163.205
-    port: 33992
+  - alterId: 1
+    cipher: auto
+    name: 🇯🇵 日本 1
+    network: ws
+    port: 2053
+    server: jp2.uuv2.uk
+    tls: true
+    type: vmess
+    uuid: e62b33ef-a6f7-46f4-999b-353cfe1d404b
+    ws-headers:
+      Host: jp2.uuv2.uk
+    ws-path: /@mftizi
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 1
+    network: ws
+    port: 80
+    server: 13.94.62.35
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 2
+    network: ws
+    port: 80
+    server: 23.99.103.85
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 3
+    network: ws
+    port: 80
+    server: 168.63.203.166
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 4
+    network: ws
+    port: 80
+    server: 13.75.115.149
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 5
+    network: ws
+    port: 60017
+    server: 52.175.79.113
+    tls: false
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    ws-headers:
+      Host: 52.175.79.113
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 6
+    network: ws
+    port: 80
+    server: 207.46.158.82
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 7
+    network: ws
+    port: 80
+    server: 23.97.66.204
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 8
+    network: ws
+    port: 60016
+    server: 52.175.79.113
+    tls: false
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    ws-headers:
+      Host: 52.175.79.113
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 9
+    network: ws
+    port: 80
+    server: 207.46.156.250
+    tls: false
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - cipher: aes-256-gcm
+    name: 🇺🇸 美国 1
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 84.17.41.83
     type: ss
-    cipher: aes-256-gcm
+  - alterId: 1
+    cipher: auto
+    name: 🇦🇷 阿根廷 10
+    network: ws
+    port: 60023
+    server: 52.175.79.113
+    tls: false
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    ws-headers:
+      Host: t.me/vpnhat
+    ws-path: /
+  - alterId: 1
+    cipher: auto
+    name: 🇰🇷 韩国 1
+    port: 80
+    server: c.ddvsmvbfnbsde.tk
+    tls: true
+    type: vmess
+    uuid: 2ca94067-30de-4aa8-b98d-a679847a9d0a
+  - alterId: 8
+    cipher: auto
+    name: 🇳🇱 荷兰 1
+    port: 26813
+    server: c32s4.jamjams.net
+    tls: false
+    type: vmess
+    uuid: e3f9279a-5037-447b-870c-8d512c32f979
+  - cipher: aes-256-gcm
+    name: 🇺🇸 美国 2
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 212.102.44.86
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇨🇦 加拿大 1
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 198.8.92.69
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇨🇦 加拿大 2
     password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 🇺🇸 美国 2
-    server: 143.244.57.99
-    port: 42816
-    type: ss
-    cipher: aes-256-gcm
-    password: tBKBf4pVzNCFKdbPgvwrNXq3
-  - name: 🇺🇸 美国 3
-    server: 143.244.57.99
-    port: 42304
-    type: ss
-    cipher: aes-256-gcm
-    password: p26v2JwhQVHDHsXk66fXt56r
-  - name: 🇺🇸 美国 4
-    server: 143.244.57.99
-    port: 48794
-    type: ss
-    cipher: aes-256-gcm
-    password: r9Q3adc3ru9sfBDPEj4yp6U6
-  - name: 🇺🇸 美国 5
-    server: 143.244.57.99
-    port: 50695
-    type: ss
-    cipher: aes-256-gcm
-    password: gqtwGu9bVreJqL3FTHSVKGzy
-  - name: 其他 1
-    server: 185.180.14.147
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 🇺🇸 美国 6
-    server: 212.102.40.83
-    port: 41676
-    type: ss
-    cipher: aes-256-gcm
-    password: z6pH3RyttkRWhJ5tpRyt6dYk
-  - name: 其他 2
-    server: 185.180.14.147
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 🇭🇰 香港 1
-    server: 84.17.53.210
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 其他 3
-    server: 45.12.223.195
-    port: 31944
-    type: ss
-    cipher: aes-256-gcm
-    password: aYNeKDMzYQYw4KbUbJA8Wszq
-  - name: 其他 4
-    server: 45.12.223.195
     port: 33992
+    server: 208.78.41.197
     type: ss
-    cipher: aes-256-gcm
-    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 其他 5
-    server: 91.90.123.115
-    port: 50168
+  - alterId: 8
+    cipher: auto
+    name: 🇺🇸 美国 3
+    port: 10606
+    server: 199.193.126.11
+    tls: false
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+  - alterId: 8
+    cipher: auto
+    name: 🇺🇸 美国 4
+    port: 10606
+    server: 23.83.227.86
+    tls: false
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+  - cipher: aes-256-gcm
+    name: 🇺🇸 美国 5
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 172.241.114.87
     type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 其他 6
-    server: 91.90.123.115
-    port: 35294
+  - cipher: aes-256-gcm
+    name: 🇺🇸 美国 6
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+    port: 49396
+    server: 192.111.134.212
     type: ss
-    cipher: aes-256-gcm
+  - cipher: aes-256-gcm
+    name: 🇨🇦 加拿大 3
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 198.8.92.74
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇺🇸 美国 7
     password: J9Y2ncrdPEC38gwydNFFGBna
-  - name: 其他 7
-    server: 91.90.123.115
-    port: 31944
+    port: 35294
+    server: 199.10.64.245
     type: ss
-    cipher: aes-256-gcm
-    password: aYNeKDMzYQYw4KbUbJA8Wszq
-  - name: 其他 8
-    server: 91.240.243.17
-    port: 33992
+  - alterId: 1
+    cipher: auto
+    name: 🇺🇳 其他 1
+    network: ws
+    port: 8888
+    server: 3.122.94.12
+    tls: false
+    type: vmess
+    uuid: 40ab20f8-d670-4f3e-99fc-0de0829ab87c
+    ws-headers:
+      Host: 3.122.94.12
+    ws-path: /
+  - cipher: aes-256-gcm
+    name: 🇩🇪 德国 1
+    password: suucSeVLmt6PQKAP77NtGw9x
+    port: 49339
+    server: 193.29.106.37
     type: ss
-    cipher: aes-256-gcm
+  - cipher: aes-256-gcm
+    name: 🇧🇪 比利时 1
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 37.120.143.117
+    type: ss
+  - alterId: 0
+    cipher: auto
+    name: 🇳🇱 荷兰 2
+    port: 16823
+    server: 152.89.211.123
+    tls: false
+    type: vmess
+    uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0
+  - cipher: aes-256-gcm
+    name: 🇬🇧 英国 1
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 89.238.130.253
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇧🇪 比利时 2
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 185.232.21.53
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇩🇪 德国 2
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+    port: 39772
+    server: 193.29.106.5
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇧🇪 比利时 3
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 194.110.115.77
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇬🇧 英国 2
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 86.106.136.85
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇬🇧 英国 3
+    password: suucSeVLmt6PQKAP77NtGw9x
+    port: 49339
+    server: 89.238.130.227
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇮🇹 义大利 1
+    password: enctdKyJfSu76VqznKwTt6Ap
+    port: 37473
+    server: 84.17.58.205
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇩🇪 德国 3
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+    port: 48938
+    server: 185.93.180.101
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇩🇪 德国 4
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+    port: 39772
+    server: 193.29.106.61
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 1
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+    port: 34815
+    server: 185.108.106.102
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 2
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+    port: 39772
+    server: 185.166.84.63
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇬🇧 英国 4
+    password: YgusH2MWA8PWc3p2VDsR7AVv
+    port: 31764
+    server: 81.19.223.189
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇧🇪 比利时 4
+    password: dpGjA4GkzV28QPDYzEp94cTe
+    port: 49514
+    server: 194.110.115.83
+    type: ss
+  - alterId: 8
+    cipher: auto
+    name: 🇳🇱 荷兰 3
+    port: 10606
+    server: 104.245.96.219
+    tls: false
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 3
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 185.108.106.53
+    type: ss
+  - alterId: 1
+    cipher: auto
+    name: 🇺🇸 美国 8
+    network: ws
+    port: 443
+    server: 172.67.182.11
+    tls: true
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    ws-headers:
+      Host: us-03.yinriver.top
+    ws-path: /
+  - cipher: aes-256-gcm
+    name: 🇨🇭 瑞士 1
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+    port: 43893
+    server: 45.12.222.245
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 4
     password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 🇺🇸 美国 7
-    server: 143.244.57.99
+    port: 33992
+    server: 185.166.84.87
+    type: ss
+  - cipher: aes-128-gcm
+    name: 🇨🇦 加拿大 4
+    password: https://dlj.tf/ssrsub
+    port: 2443
+    server: 45.62.228.191
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇮🇹 义大利 2
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+    port: 33992
+    server: 217.138.219.229
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 5
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+    port: 39772
+    server: 185.108.106.74
+    type: ss
+  - cipher: aes-256-gcm
+    name: 🇫🇷 法国 6
+    password: r6hDrkP4Et6EENTS8Qy7Tcmg
+    port: 44539
+    server: 138.199.16.137
+    type: ss
+  - name: 🇦🇷 阿根廷 11
+    server: zzg1.uuv2.co.uk
+    port: 31014
+    type: vmess
+    uuid: e62b33ef-a6f7-46f4-999b-353cfe1d404b
+    alterId: 1
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /@mftizi
+    ws-headers:
+      Host: jp2.uuv2.uk
+  - name: 🇨🇳 中国 1
+    server: global-transit-01-hk.pucdn.me
+    port: 11115
+    type: vmess
+    uuid: f37bcc5b-6071-3588-a25d-d7747e4c648f
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /vvv
+    ws-headers:
+      Host: l2-hkt-a-08.pucdn.me
+  - name: 🇯🇵 日本 2
+    server: jp2.uuv2.uk
+    port: 2053
+    type: vmess
+    uuid: e62b33ef-a6f7-46f4-999b-353cfe1d404b
+    alterId: 1
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /@mftizi
+    ws-headers:
+      Host: jp2.uuv2.uk
+  - name: 🇦🇷 阿根廷 12
+    server: 13.94.62.35
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇦🇷 阿根廷 13
+    server: 23.99.103.85
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇦🇷 阿根廷 14
+    server: 168.63.203.166
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇦🇷 阿根廷 15
+    server: 13.75.115.149
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇦🇷 阿根廷 16
+    server: 52.175.79.113
+    port: 60017
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 52.175.79.113
+  - name: 🇦🇷 阿根廷 17
+    server: 207.46.158.82
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇦🇷 阿根廷 18
+    server: 52.175.79.113
+    port: 60016
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 52.175.79.113
+  - name: 🇦🇷 阿根廷 19
+    server: 207.46.156.250
+    port: 80
+    type: vmess
+    uuid: 0821b208-8675-43e8-bbed-8afac1e391a1
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇰🇷 韩国 2
+    server: c.ddvsmvbfnbsde.tk
+    port: 80
+    type: vmess
+    uuid: f3e52136-6b77-460f-b06c-4f3d67c8426b
+    alterId: 1
+    cipher: auto
+    tls: true
+  - name: 🇺🇸 美国 9
+    server: 84.17.41.83
     port: 43893
     type: ss
     cipher: aes-256-gcm
     password: YyCBeDdYX4cadHpCkkmdJLq8
-  - name: 🇺🇸 美国 8
-    server: 143.244.57.99
-    port: 44745
-    type: ss
-    cipher: aes-256-gcm
-    password: fyXdw87yCH9SAmFkPvsvLVqC
-  - name: 🇺🇸 美国 9
-    server: 143.244.57.99
-    port: 34815
-    type: ss
-    cipher: aes-256-gcm
-    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 🇦🇷 阿根廷 20
+    server: 52.175.79.113
+    port: 60023
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇳🇱 荷兰 4
+    server: c32s4.jamjams.net
+    port: 26813
+    type: vmess
+    uuid: e3f9279a-5037-447b-870c-8d512c32f979
+    alterId: 8
+    cipher: auto
+    tls: false
   - name: 🇺🇸 美国 10
-    server: 107.181.177.181
+    server: 212.102.44.86
+    port: 48938
+    type: ss
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇨🇦 加拿大 5
+    server: 198.8.92.69
+    port: 48938
+    type: ss
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇨🇦 加拿大 6
+    server: 208.78.41.197
     port: 33992
     type: ss
     cipher: aes-256-gcm
     password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-  - name: 其他 9
-    server: 138.199.16.137
-    port: 44236
+  - name: 🇺🇸 美国 11
+    server: 199.193.126.11
+    port: 10606
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+    alterId: 8
+    cipher: auto
+    tls: false
+  - name: 🇺🇳 其他 2
+    server: 198.211.30.163
+    port: 443
+    type: vmess
+    uuid: 6aaa2f9f-7c91-4b51-aa77-05a83a5d6a4d
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /path/310910211916
+    ws-headers:
+      Host: www.93289686.xyz
+  - name: 🇺🇸 美国 12
+    server: 23.83.227.86
+    port: 10606
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+    alterId: 8
+    cipher: auto
+    tls: false
+  - name: 🇺🇸 美国 13
+    server: 172.241.114.87
+    port: 48938
     type: ss
     cipher: aes-256-gcm
-    password: FWrXcxPZjJxAN89xLgqY3Acp
-  - name: 其他 10
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇺🇸 美国 14
+    server: 185.242.5.149
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇨🇦 加拿大 7
+    server: 198.8.92.74
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇺🇸 美国 15
+    server: 199.10.64.245
+    port: 35294
+    type: ss
+    cipher: aes-256-gcm
+    password: J9Y2ncrdPEC38gwydNFFGBna
+  - name: 🇮🇹 义大利 3
+    server: 217.138.219.227
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇺🇳 其他 3
+    server: 3.122.94.12
+    port: 8888
+    type: vmess
+    uuid: 40ab20f8-d670-4f3e-99fc-0de0829ab87c
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 3.122.94.12
+  - name: 🇺🇸 美国 16
+    server: v2raylpc.herokuapp.com
+    port: 443
+    type: vmess
+    uuid: ad806487-2d26-4636-98b6-ab85cc8521f7
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: v2raylpc.herokuapp.com
+  - name: 🇩🇪 德国 5
+    server: 193.29.106.37
+    port: 49339
+    type: ss
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇧🇪 比利时 5
+    server: 37.120.143.117
+    port: 48938
+    type: ss
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇳🇱 荷兰 5
+    server: 152.89.211.123
+    port: 16823
+    type: vmess
+    uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇧🇪 比利时 6
+    server: 185.232.21.53
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇩🇪 德国 6
+    server: 193.29.106.5
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇧🇪 比利时 7
+    server: 194.110.115.77
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇬🇧 英国 5
+    server: 86.106.136.85
+    port: 48938
+    type: ss
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇬🇧 英国 6
+    server: 89.238.130.227
+    port: 49339
+    type: ss
+    cipher: aes-256-gcm
+    password: suucSeVLmt6PQKAP77NtGw9x
+  - name: 🇮🇹 义大利 4
+    server: 84.17.58.205
+    port: 37473
+    type: ss
+    cipher: aes-256-gcm
+    password: enctdKyJfSu76VqznKwTt6Ap
+  - name: 🇩🇪 德国 7
+    server: 185.93.180.101
+    port: 48938
+    type: ss
+    cipher: aes-256-gcm
+    password: 4ejJ8n5ddLuYDUHGXJre2ufJ
+  - name: 🇩🇪 德国 8
+    server: 193.29.106.61
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇫🇷 法国 7
+    server: 185.108.106.102
+    port: 34815
+    type: ss
+    cipher: aes-256-gcm
+    password: LkFAzkzXkSCRYa2CsRdL8cGb
+  - name: 🇫🇷 法国 8
+    server: 185.166.84.63
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇬🇧 英国 7
+    server: 81.19.223.189
+    port: 31764
+    type: ss
+    cipher: aes-256-gcm
+    password: YgusH2MWA8PWc3p2VDsR7AVv
+  - name: 🇬🇧 英国 8
+    server: 84.39.114.86
+    port: 49396
+    type: ss
+    cipher: aes-256-gcm
+    password: BdRWC38L5JUDMTYNNxJGcUwB
+  - name: 🇧🇪 比利时 8
+    server: 194.110.115.83
+    port: 49514
+    type: ss
+    cipher: aes-256-gcm
+    password: dpGjA4GkzV28QPDYzEp94cTe
+  - name: 🇳🇱 荷兰 6
+    server: 104.245.96.219
+    port: 10606
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+    alterId: 8
+    cipher: auto
+    tls: false
+  - name: 🇨🇭 瑞士 2
+    server: 45.12.222.245
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇫🇷 法国 9
+    server: 185.166.84.87
+    port: 33992
+    type: ss
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇮🇹 义大利 5
+    server: 217.138.219.229
+    port: 33992
+    type: ss
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: 🇦🇺 澳洲 1
+    server: 45.248.79.19
+    port: 43893
+    type: ss
+    cipher: aes-256-gcm
+    password: YyCBeDdYX4cadHpCkkmdJLq8
+  - name: 🇫🇷 法国 10
+    server: 185.108.106.74
+    port: 39772
+    type: ss
+    cipher: aes-256-gcm
+    password: CUndSZnYsPKcu6Kj8THVMBHD
+  - name: 🇫🇷 法国 11
     server: 138.199.16.137
     port: 44539
     type: ss
     cipher: aes-256-gcm
     password: r6hDrkP4Et6EENTS8Qy7Tcmg
-  - name: 其他 11
-    server: 138.199.16.137
-    port: 40093
+  - name: 🇭🇰 香港特别行政区 1
+    server: zzg1.uuv2.co.uk
+    port: 44032
+    type: vmess
+    uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee
+    alterId: 1
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /@mftizi
+    ws-headers:
+      Host: hk01.uuv2.uk
+  - name: 🇺🇳 其他 4
+    server: 199.193.126.11
+    port: 10606
+    type: vmess
+    uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2
+    alterId: 8
+    cipher: auto
+    tls: false
+  - name: 🇺🇲 美国本土外小岛屿 1
+    server: 52.175.79.113
+    port: 60019
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇭🇰 香港特别行政区 2
+    server: 52.184.26.48
+    port: 80
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇭🇰 香港特别行政区 3
+    server: 52.184.26.48
+    port: 80
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇳🇱 荷兰 7
+    server: 46.182.107.157
+    port: 443
+    type: vmess
+    uuid: 20b30916-e203-412e-8ec0-900f3acd5128
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /footers
+    ws-headers:
+      Host: www.73345741.xyz
+  - name: 🇭🇰 香港特别行政区 4
+    server: 52.175.79.113
+    port: 60022
+    type: vmess
+    uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: t.me/vpnhat
+  - name: 🇸🇬 新加坡 1
+    server: 52.221.217.29
+    port: 443
+    type: vmess
+    uuid: f5cf2870-5ba2-4b2d-b2d4-e72f3fb4d46d
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: oker.ga
+  - name: 🇺🇸 美国 17
+    server: 142.4.123.249
+    port: 51388
+    type: vmess
+    uuid: 8f7a28a6-002a-11ec-b64a-00163cf00cd9
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇺🇸 美国 18
+    server: 137.175.30.248
+    port: 12345
     type: ss
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 其他 12
-    server: 176.31.146.89
-    port: 4040
+    password: dongtaiwang.com
+  - name: 🇺🇸 美国 19
+    server: 198.200.51.34
+    port: 37221
+    type: vmess
+    uuid: c70c1895-22ab-4661-83e7-c437137273f9
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇺🇸 美国 20
+    server: 198.200.51.189
+    port: 53930
+    type: vmess
+    uuid: 01c61866-4586-4c83-82d1-05ee08cbfa9a
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇳🇱 荷兰 8
+    server: 163.172.214.118
+    port: 41261
+    type: vmess
+    uuid: 5d3e6e14-5828-4e88-a946-bad5c700b4d5
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇩🇪 德国 9
+    server: 89.163.224.127
+    port: 28599
+    type: vmess
+    uuid: ec8be0c5-9eac-4728-8929-ef23c73d8341
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇩🇪 德国 10
+    server: 217.79.181.111
+    port: 56748
+    type: vmess
+    uuid: bcc21751-81be-4b0b-8cbc-bc30d67cb818
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇷🇺 俄罗斯 1
+    server: 45.136.245.233
+    port: 52306
+    type: vmess
+    uuid: c1a6d14f-fa43-4bf7-8882-d9eeb423e599
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇷🇺 俄罗斯 2
+    server: 46.17.45.139
+    port: 56967
+    type: vmess
+    uuid: 5458261b-ec18-4673-9251-fa7859a5cacb
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇺🇸 美国 21
+    server: 143.244.57.99
+    port: 42816
     type: ss
     cipher: aes-256-gcm
-    password: AMvZHPXhPk6t
-  - name: 其他 13
-    server: 195.47.194.70
-    port: 31572
+    password: tBKBf4pVzNCFKdbPgvwrNXq3
+  - name: 🇺🇸 美国 22
+    server: 143.244.57.99
+    port: 50695
     type: ss
     cipher: aes-256-gcm
-    password: n8w4StnbVD9dmXYn4Ajt87EA
-  - name: 其他 14
-    server: 165.231.163.7
-    port: 40093
-    type: ss
-    cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 其他 15
-    server: 89.238.130.251
-    port: 39772
-    type: ss
-    cipher: aes-256-gcm
-    password: CUndSZnYsPKcu6Kj8THVMBHD
-  - name: 其他 16
-    server: 138.199.19.162
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 其他 17
-    server: 138.199.19.182
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 🇫🇷 法国 1
-    server: 51.75.141.238
-    port: 57478
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: PkaS32tULDz4
-  - name: 🇺🇸 美国 11
-    server: 51.81.35.164
-    port: 57478
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ZZhXtk2j8T0Y
-  - name: 其他 18
-    server: ss.pl.sshmax.net
-    port: 1443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: M1LCZAlfz1bV
-  - name: 其他 19
-    server: ss.pl.sshmax.net
-    port: 1443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: M1LCZAlfz1bV
-  - name: 其他 20
+    password: gqtwGu9bVreJqL3FTHSVKGzy
+  - name: 🇭🇰 香港特别行政区 5
     server: 84.17.53.210
     port: 50168
     type: ss
     cipher: aes-256-gcm
     password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 其他 21
+  - name: 🇺🇳 其他 5
+    server: 45.12.223.195
+    port: 31944
+    type: ss
+    cipher: aes-256-gcm
+    password: aYNeKDMzYQYw4KbUbJA8Wszq
+  - name: 🇺🇳 其他 6
+    server: 91.90.123.115
+    port: 35294
+    type: ss
+    cipher: aes-256-gcm
+    password: J9Y2ncrdPEC38gwydNFFGBna
+  - name: 🇺🇳 其他 7
+    server: 91.90.123.115
+    port: 31944
+    type: ss
+    cipher: aes-256-gcm
+    password: aYNeKDMzYQYw4KbUbJA8Wszq
+  - name: 🇺🇳 其他 8
     server: 45.83.91.133
     port: 40093
     type: ss
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 其他 22
+  - name: 🇺🇳 其他 9
     server: 45.83.91.133
     port: 40093
     type: ss
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 其他 23
+  - name: 🇺🇳 其他 10
     server: 45.83.91.133
     port: 40093
     type: ss
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: 其他 24
-    server: 185.180.14.147
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 🇩🇪 德国 1
-    server: 138.199.19.182
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
-  - name: 其他 25
-    server: 185.180.14.147
-    port: 50168
-    type: ss
-    cipher: aes-256-gcm
-    password: WCuz7yrfZSCQQXSNrtGPz2HT
 proxy-groups:
   - name: 自动选择
     interval: 300
     type: select
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 其他 1
-      - 其他 10
-      - 其他 11
-      - 其他 12
-      - 其他 13
-      - 其他 14
-      - 其他 15
-      - 其他 16
-      - 其他 17
-      - 其他 18
-      - 其他 19
-      - 其他 2
-      - 其他 20
-      - 其他 21
-      - 其他 22
-      - 其他 23
-      - 其他 24
-      - 其他 25
-      - 其他 3
-      - 其他 4
-      - 其他 5
-      - 其他 6
-      - 其他 7
-      - 其他 8
-      - 其他 9
+      - 🇦🇷 阿根廷 1
+      - 🇦🇷 阿根廷 10
+      - 🇦🇷 阿根廷 11
+      - 🇦🇷 阿根廷 12
+      - 🇦🇷 阿根廷 13
+      - 🇦🇷 阿根廷 14
+      - 🇦🇷 阿根廷 15
+      - 🇦🇷 阿根廷 16
+      - 🇦🇷 阿根廷 17
+      - 🇦🇷 阿根廷 18
+      - 🇦🇷 阿根廷 19
+      - 🇦🇷 阿根廷 2
+      - 🇦🇷 阿根廷 20
+      - 🇦🇷 阿根廷 3
+      - 🇦🇷 阿根廷 4
+      - 🇦🇷 阿根廷 5
+      - 🇦🇷 阿根廷 6
+      - 🇦🇷 阿根廷 7
+      - 🇦🇷 阿根廷 8
+      - 🇦🇷 阿根廷 9
+      - 🇦🇺 澳洲 1
+      - 🇧🇪 比利时 1
+      - 🇧🇪 比利时 2
+      - 🇧🇪 比利时 3
+      - 🇧🇪 比利时 4
+      - 🇧🇪 比利时 5
+      - 🇧🇪 比利时 6
+      - 🇧🇪 比利时 7
+      - 🇧🇪 比利时 8
+      - 🇨🇦 加拿大 1
+      - 🇨🇦 加拿大 2
+      - 🇨🇦 加拿大 3
+      - 🇨🇦 加拿大 4
+      - 🇨🇦 加拿大 5
+      - 🇨🇦 加拿大 6
+      - 🇨🇦 加拿大 7
+      - 🇨🇭 瑞士 1
+      - 🇨🇭 瑞士 2
+      - 🇨🇳 中国 1
       - 🇩🇪 德国 1
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 2
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
       - 🇫🇷 法国 1
-      - 🇭🇰 香港 1
+      - 🇫🇷 法国 10
+      - 🇫🇷 法国 11
+      - 🇫🇷 法国 2
+      - 🇫🇷 法国 3
+      - 🇫🇷 法国 4
+      - 🇫🇷 法国 5
+      - 🇫🇷 法国 6
+      - 🇫🇷 法国 7
+      - 🇫🇷 法国 8
+      - 🇫🇷 法国 9
+      - 🇬🇧 英国 1
+      - 🇬🇧 英国 2
+      - 🇬🇧 英国 3
+      - 🇬🇧 英国 4
+      - 🇬🇧 英国 5
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
+      - 🇭🇰 香港特别行政区 1
+      - 🇭🇰 香港特别行政区 2
+      - 🇭🇰 香港特别行政区 3
+      - 🇭🇰 香港特别行政区 4
+      - 🇭🇰 香港特别行政区 5
+      - 🇮🇹 义大利 1
+      - 🇮🇹 义大利 2
+      - 🇮🇹 义大利 3
+      - 🇮🇹 义大利 4
+      - 🇮🇹 义大利 5
+      - 🇯🇵 日本 1
+      - 🇯🇵 日本 2
+      - 🇰🇷 韩国 1
+      - 🇰🇷 韩国 2
+      - 🇳🇱 荷兰 1
+      - 🇳🇱 荷兰 2
+      - 🇳🇱 荷兰 3
+      - 🇳🇱 荷兰 4
+      - 🇳🇱 荷兰 5
+      - 🇳🇱 荷兰 6
+      - 🇳🇱 荷兰 7
+      - 🇳🇱 荷兰 8
+      - 🇷🇺 俄罗斯 1
+      - 🇷🇺 俄罗斯 2
+      - 🇸🇬 新加坡 1
+      - 🇺🇲 美国本土外小岛屿 1
+      - 🇺🇳 其他 1
+      - 🇺🇳 其他 10
+      - 🇺🇳 其他 2
+      - 🇺🇳 其他 3
+      - 🇺🇳 其他 4
+      - 🇺🇳 其他 5
+      - 🇺🇳 其他 6
+      - 🇺🇳 其他 7
+      - 🇺🇳 其他 8
+      - 🇺🇳 其他 9
       - 🇺🇸 美国 1
       - 🇺🇸 美国 10
       - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 19
       - 🇺🇸 美国 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 22
       - 🇺🇸 美国 3
       - 🇺🇸 美国 4
       - 🇺🇸 美国 5
