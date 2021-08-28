@@ -1,4 +1,3 @@
-import fs from 'fs';
 import { readNodes, writeNode } from './lib/fsYaml.js';
 import { formateName } from './lib/formateName.js';
 

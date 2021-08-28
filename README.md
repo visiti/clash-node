@@ -1,5 +1,6 @@
 
-- 订阅地址: https://raw.githubusercontent.com/visiti/clash-node/main/clash-node.yaml
+- github地址: https://raw.githubusercontent.com/visiti/clash-node/main/clash-node.yaml
+- gitee地址： https://gitee.com/visti/clash-node/raw/main/clash-node.yaml
 
 # 脚本执行
 将需要合并的配置文件放在`nodes`目录 执行下面命令
