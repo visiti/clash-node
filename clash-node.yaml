@@ -27,925 +27,141 @@ rules:
   - MATCH,自动选择
 proxies:
   - name: 🇺🇳 其他 1
-    server: 194.68.225.104
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇳 其他 2
-    server: 198.57.27.218
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 3
-    server: 198.57.27.152
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 4
-    server: 139.99.62.207
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇳 其他 5
-    server: 198.57.27.152
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇺🇳 其他 6
-    server: 198.57.27.152
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 7
-    server: 198.57.27.152
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 8
-    server: 139.99.62.207
-    port: 8888
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 9
-    server: 198.57.27.152
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 10
-    server: 198.57.27.152
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 11
-    server: 198.57.27.152
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 12
     server: 141.95.0.26
     port: 826
     type: ss
     cipher: chacha20-ietf-poly1305
     password: sF43Xt2gONqcgFX563
-  - name: 🇺🇳 其他 13
+  - name: 🇺🇳 其他 2
     server: 145.239.1.137
     port: 8091
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 14
+  - name: 🇺🇳 其他 3
     server: 145.239.1.137
     port: 5003
     type: ss
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 15
+  - name: 🇺🇳 其他 4
     server: 145.239.1.137
     port: 5004
     type: ss
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 16
+  - name: 🇺🇳 其他 5
     server: 145.239.1.137
     port: 7307
     type: ss
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 🇺🇳 其他 17
-    server: 145.239.1.137
-    port: 8080
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇭🇰 香港 1
-    server: 118.107.244.110
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇭🇰 香港 2
-    server: 118.107.244.112
-    port: 8080
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇭🇰 香港 3
-    server: 118.107.244.112
-    port: 8881
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇭🇰 香港 4
-    server: 118.107.244.112
-    port: 8008
-    type: ss
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇭🇰 香港 5
-    server: 84.17.37.55
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: tjwRqQvteAjt3xFmbZTA
-  - name: 🇭🇰 香港 6
-    server: 118.107.244.110
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇭🇰 香港 7
-    server: 118.107.244.112
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 18
+  - name: 🇺🇳 其他 6
     server: 45.133.181.58
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: qzj5NqakK4YvYYU87eFF
-  - name: 🇺🇳 其他 19
-    server: 172.105.35.61
-    port: 8118
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇳 其他 20
+  - name: 🇺🇳 其他 7
     server: 5.253.204.194
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: qLzS7DF9qRYxJTHfckhC
-  - name: 🇺🇳 其他 21
-    server: 185.89.238.36
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇳 其他 22
-    server: 169.57.35.97
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 3Q5yYEGGMu8jU2p25aWL
-  - name: 🇺🇳 其他 23
-    server: 89.238.177.234
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: VPPqaR4qpLmNw37jaJg6
-  - name: 🇺🇳 其他 24
+  - name: 🇺🇳 其他 8
     server: 84.247.50.10
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: AsLgDbA45KTMXumtzWhf
-  - name: 🇺🇳 其他 25
-    server: 46.29.218.6
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 26
-    server: 46.29.218.6
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 27
+  - name: 🇺🇳 其他 9
     server: 46.29.218.6
     port: 8091
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 28
+  - name: 🇺🇳 其他 10
     server: 46.29.218.6
     port: 8090
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 29
-    server: 103.108.94.226
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: bFfLrvbG3GjjNSxKBWt5
-  - name: 🇺🇳 其他 30
-    server: 188.214.125.106
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Zq4srheW4eeqMfGeWMTG
-  - name: 🇺🇳 其他 31
-    server: 45.83.91.66
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: fAmKHf3Dft78ZyzL9kYF
   - name: 🇷🇺 俄罗斯 1
     server: 82.202.220.242
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: Kw6hMXQ2Z7ey7mf2Uqyr
-  - name: 🇺🇳 其他 32
-    server: 194.68.32.29
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇳 其他 33
-    server: 192.36.27.79
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
   - name: 🇺🇸 美国 1
-    server: 38.68.134.202
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 2
-    server: 38.68.134.202
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 3
-    server: 38.68.134.202
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 4
-    server: 38.68.134.202
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 5
-    server: 23.19.26.246
-    port: 10515
-    type: ss
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 🇺🇸 美国 6
-    server: 70.32.0.208
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: q4apPAjyY9knqKS4e9xZ
-  - name: 🇺🇸 美国 7
     server: 107.182.234.233
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: XkH8z99cQguQ8ywK5jhV
-  - name: 🇺🇸 美国 8
-    server: 70.39.71.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: XkH8z99cQguQ8ywK5jhV
-  - name: 🇺🇸 美国 9
-    server: 96.47.224.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: YDNYJcNdH5xuLrhyr7Fj
-  - name: 🇺🇸 美国 10
-    server: 23.226.131.146
-    port: 8388
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ckX2YfENbjCtVzVJphFP
-  - name: 🇺🇸 美国 11
-    server: 23.226.131.146
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ckX2YfENbjCtVzVJphFP
-  - name: 🇺🇸 美国 12
-    server: 38.68.134.202
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 13
-    server: 38.68.134.202
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇸 美国 14
-    server: 38.68.134.202
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 15
-    server: 192.46.210.73
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 16
-    server: 192.46.210.73
-    port: 8000
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 17
-    server: 172.99.190.87
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 18
-    server: 192.46.210.73
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 19
-    server: 38.64.138.145
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 20
-    server: 38.64.138.145
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 21
-    server: 167.88.61.60
-    port: 8118
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇸 美国 22
-    server: 38.91.102.96
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 23
-    server: 38.91.102.86
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 24
-    server: 38.91.102.96
-    port: 5601
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 34
-    server: 134.195.196.68
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 35
-    server: 134.195.196.68
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇳 其他 36
-    server: 77.243.191.178
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 47GH3wQRw7V4Zhd35bFs
-  - name: 🇺🇳 其他 37
-    server: 169.197.141.24
-    port: 8888
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 38
-    server: 134.195.196.68
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 39
-    server: 169.197.141.24
-    port: 5001
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 40
-    server: 169.197.141.24
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 41
-    server: 194.68.225.104
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇳 其他 42
-    server: 198.57.27.218
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 43
-    server: 198.57.27.152
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 44
-    server: 139.99.62.207
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇳 其他 45
-    server: 198.57.27.152
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇳 其他 46
-    server: 198.57.27.152
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇺🇳 其他 47
-    server: 198.57.27.152
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 48
-    server: 198.57.27.152
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 49
-    server: 198.57.27.152
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 50
-    server: 198.57.27.152
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 51
-    server: 198.57.27.152
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 52
+  - name: 🇺🇳 其他 11
     server: 141.95.0.26
     port: 826
     type: ss
     cipher: chacha20-ietf-poly1305
     password: sF43Xt2gONqcgFX563
-  - name: 🇺🇳 其他 53
+  - name: 🇺🇳 其他 12
     server: 145.239.1.137
     port: 2375
     type: ss
     cipher: aes-256-gcm
     password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 54
-    server: 145.239.1.137
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 55
-    server: 145.239.1.137
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇭🇰 香港 8
-    server: 118.107.244.110
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇭🇰 香港 9
-    server: 118.107.244.110
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇭🇰 香港 10
-    server: 118.107.244.110
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇭🇰 香港 11
-    server: 118.107.244.112
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇭🇰 香港 12
-    server: 118.107.244.112
-    port: 8881
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇭🇰 香港 13
-    server: 118.107.244.112
-    port: 8008
-    type: ss
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇭🇰 香港 14
-    server: 84.17.37.55
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: tjwRqQvteAjt3xFmbZTA
-  - name: 🇺🇳 其他 56
+  - name: 🇺🇳 其他 13
     server: 45.133.181.58
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: qzj5NqakK4YvYYU87eFF
-  - name: 🇺🇳 其他 57
+  - name: 🇺🇳 其他 14
     server: 212.199.61.55
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: scDj68fv6xkMg2np9RgW
-  - name: 🇺🇳 其他 58
-    server: 172.105.35.61
-    port: 8118
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇳 其他 59
-    server: 5.253.204.194
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: qLzS7DF9qRYxJTHfckhC
-  - name: 🇺🇳 其他 60
-    server: 185.89.238.36
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇳 其他 61
-    server: 169.57.35.97
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 3Q5yYEGGMu8jU2p25aWL
-  - name: 🇺🇳 其他 62
-    server: 89.238.177.234
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: VPPqaR4qpLmNw37jaJg6
-  - name: 🇺🇳 其他 63
-    server: 46.29.218.6
-    port: 8008
-    type: ss
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇺🇳 其他 64
+  - name: 🇺🇳 其他 15
     server: 46.29.218.6
     port: 7306
     type: ss
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 🇺🇳 其他 65
-    server: 46.29.218.6
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 66
-    server: 84.247.50.10
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: AsLgDbA45KTMXumtzWhf
-  - name: 🇺🇳 其他 67
+  - name: 🇺🇳 其他 16
     server: 46.29.218.6
     port: 5004
     type: ss
     cipher: aes-256-gcm
     password: g5MeD6Ft3CWlJId
-  - name: 🇺🇳 其他 68
+  - name: 🇺🇳 其他 17
     server: 46.29.218.6
     port: 8090
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 69
-    server: 103.108.94.226
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: bFfLrvbG3GjjNSxKBWt5
-  - name: 🇺🇳 其他 70
-    server: 188.214.125.106
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Zq4srheW4eeqMfGeWMTG
-  - name: 🇺🇳 其他 71
-    server: 45.83.91.66
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: fAmKHf3Dft78ZyzL9kYF
   - name: 🇷🇺 俄罗斯 2
     server: 82.202.220.242
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: Kw6hMXQ2Z7ey7mf2Uqyr
-  - name: 🇺🇳 其他 72
-    server: 192.36.27.79
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇺🇸 美国 25
-    server: 38.68.134.202
-    port: 5004
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 26
-    server: 38.68.134.202
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 27
-    server: 38.68.134.202
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 28
-    server: 38.68.134.202
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 29
-    server: 23.19.26.246
-    port: 10515
-    type: ss
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 🇺🇸 美国 30
+  - name: 🇺🇸 美国 2
     server: 107.182.234.233
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: XkH8z99cQguQ8ywK5jhV
-  - name: 🇺🇸 美国 31
-    server: 70.39.71.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: XkH8z99cQguQ8ywK5jhV
-  - name: 🇺🇸 美国 32
-    server: 96.47.224.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: YDNYJcNdH5xuLrhyr7Fj
-  - name: 🇺🇸 美国 33
-    server: 23.226.131.146
-    port: 8388
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ckX2YfENbjCtVzVJphFP
-  - name: 🇺🇸 美国 34
-    server: 23.226.131.146
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ckX2YfENbjCtVzVJphFP
-  - name: 🇺🇸 美国 35
-    server: 38.68.134.202
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 36
-    server: 38.68.134.202
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇸 美国 37
-    server: 38.68.134.202
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 38
-    server: 192.46.210.73
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 39
-    server: 192.46.210.73
-    port: 8000
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 40
-    server: 172.99.190.87
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 41
-    server: 172.99.190.87
-    port: 8008
-    type: ss
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇺🇸 美国 42
-    server: 192.46.210.73
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇺🇸 美国 43
-    server: 38.64.138.145
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 44
-    server: 38.64.138.145
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 45
-    server: 167.88.61.60
-    port: 8118
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇸 美国 46
-    server: 38.91.102.96
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 47
-    server: 38.91.102.86
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 48
-    server: 38.91.102.96
-    port: 5601
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 73
-    server: 134.195.196.68
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇳 其他 74
-    server: 134.195.196.68
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇳 其他 75
-    server: 77.243.191.178
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 47GH3wQRw7V4Zhd35bFs
-  - name: 🇺🇳 其他 76
-    server: 169.197.141.24
-    port: 8888
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 77
-    server: 134.195.196.68
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇳 其他 78
-    server: 169.197.141.24
-    port: 5001
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 79
-    server: 169.197.141.24
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇳 其他 80
-    server: 185.225.69.134
-    port: 45081
-    type: vmess
-    uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-  - name: 🇺🇳 其他 81
-    server: 5.255.101.95
-    port: 60202
-    type: vmess
-    uuid: 1b693eb3-3241-362a-9001-5b503789cfbe
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 5.255.101.95
-  - name: 🇺🇸 美国 49
+  - name: 🇺🇸 美国 3
     type: ss
     server: 107.182.234.233
     password: XkH8z99cQguQ8ywK5jhV
     port: 8389
     cipher: chacha20-ietf-poly1305
-  - name: 🇨🇦 加拿大 1
-    type: ss
-    server: 38.64.138.145
-    password: Y6R9pAtvxxzmGC
-    port: 5000
-    cipher: aes-256-gcm
   - name: 🇮🇱 以色列 1
     type: ss
     server: 212.199.61.55
     password: scDj68fv6xkMg2np9RgW
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇨🇦 加拿大 2
-    type: ss
-    server: 38.64.138.145
-    password: Y6R9pAtvxxzmGC
-    port: 3306
-    cipher: aes-256-gcm
-  - name: 🇸🇪 瑞典 1
-    type: ss
-    server: 45.83.91.66
-    password: fAmKHf3Dft78ZyzL9kYF
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇦🇹 奥地利 1
-    type: ss
-    server: 37.120.212.162
-    password: 2XtmwMEgsVJYKWF4VjkL
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇳🇴 挪威 1
-    type: ss
-    server: 84.247.50.10
-    password: AsLgDbA45KTMXumtzWhf
     port: 8389
     cipher: chacha20-ietf-poly1305
   - name: 🇩🇪 德国 1
@@ -960,160 +176,34 @@ proxies:
     password: e4FCWrgpkji3QY
     port: 9101
     cipher: aes-256-gcm
-  - name: 🇨🇦 加拿大 3
-    type: ss
-    server: 198.57.27.218
-    password: faBAoD54k87UJG7
-    port: 2376
-    cipher: aes-256-gcm
   - name: 🇬🇷 希腊 1
     type: ss
     server: 185.51.134.210
     password: mTrN2fMYeWJwrkWpTnL2
     port: 8389
     cipher: chacha20-ietf-poly1305
-  - name: 🇨🇦 加拿大 4
-    type: ss
-    server: 169.197.141.24
-    password: Y6R9pAtvxxzmGC
-    port: 8888
-    cipher: aes-256-gcm
   - name: 🇫🇷 法国 1
     type: ss
     server: 62.210.209.50
     password: TEzjfAYq2IjtuoS
     port: 6697
     cipher: aes-256-gcm
-  - name: 🇺🇸 美国 50
-    type: ss
-    server: 70.32.0.208
-    password: q4apPAjyY9knqKS4e9xZ
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇲🇾 马来西亚 1
-    type: ss
-    server: 223.25.246.4
-    password: w4GUD28Bw9uCMdbc2pqA
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇩🇰 丹麦 1
-    type: ss
-    server: 192.36.27.79
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    cipher: aes-256-cfb
-  - name: 🇦🇺 澳洲 1
-    type: ss
-    server: 46.102.153.106
-    password: dsHq7JmRFhSkvxzCuMFy
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-  - name: 🇨🇦 加拿大 5
-    type: ss
-    server: 198.57.27.218
-    password: g5MeD6Ft3CWlJId
-    port: 5003
-    cipher: aes-256-gcm
-  - name: 🇺🇸 美国 51
+  - name: 🇺🇸 美国 4
     type: ss
     server: 38.75.136.93
     password: Y6R9pAtvxxzmGC
     port: 3389
     cipher: aes-256-gcm
-  - name: 🇳🇿 纽西兰 1
-    type: ss
-    server: 103.108.94.226
-    password: bFfLrvbG3GjjNSxKBWt5
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇨🇳 中国 1
-    type: ss
-    server: 84.17.37.55
-    password: tjwRqQvteAjt3xFmbZTA
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇬🇧 英国 2
-    type: ss
-    server: 172.99.190.87
-    password: XKFKl2rULjIp74
-    port: 8008
-    cipher: aes-256-gcm
-  - name: 🇳🇴 挪威 2
+  - name: 🇳🇴 挪威 1
     type: ss
     server: 46.29.218.6
     password: faBAoD54k87UJG7
     port: 2376
     cipher: aes-256-gcm
-  - name: 🇧🇬 保加利亚 1
-    type: ss
-    server: 194.68.225.104
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    cipher: aes-256-cfb
-  - name: 🇺🇸 美国 52
-    type: ss
-    server: 38.91.102.96
-    password: Y6R9pAtvxxzmGC
-    port: 5601
-    cipher: aes-256-gcm
-  - name: 🇩🇪 德国 2
-    type: ss
-    server: 145.239.1.137
-    password: g5MeD6Ft3CWlJId
-    port: 5004
-    cipher: aes-256-gcm
-  - name: 🇳🇴 挪威 3
-    type: ss
-    server: 194.68.32.29
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    cipher: aes-256-cfb
-  - name: 🇨🇳 中国 2
-    type: ss
-    server: 84.17.37.55
-    password: tjwRqQvteAjt3xFmbZTA
-    port: 8388
-    cipher: chacha20-ietf-poly1305
   - name: 🇷🇺 俄罗斯 3
     type: ss
     server: 82.202.220.242
     password: Kw6hMXQ2Z7ey7mf2Uqyr
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-  - name: 🇨🇦 加拿大 6
-    type: ss
-    server: 169.197.141.24
-    password: Y6R9pAtvxxzmGC
-    port: 5001
-    cipher: aes-256-gcm
-  - name: 🇩🇪 德国 3
-    type: ss
-    server: 145.239.1.137
-    password: FoOiGlkAA9yPEGP
-    port: 7306
-    cipher: aes-256-gcm
-  - name: 🇺🇸 美国 53
-    type: ss
-    server: 38.91.102.96
-    password: Y6R9pAtvxxzmGC
-    port: 3306
-    cipher: aes-256-gcm
-  - name: 🇺🇸 美国 54
-    type: ss
-    server: 23.226.131.146
-    password: ckX2YfENbjCtVzVJphFP
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇷🇺 俄罗斯 4
-    type: ss
-    server: 82.202.220.242
-    password: Kw6hMXQ2Z7ey7mf2Uqyr
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇧🇪 比利时 1
-    type: ss
-    server: 77.243.191.178
-    password: 47GH3wQRw7V4Zhd35bFs
     port: 8389
     cipher: chacha20-ietf-poly1305
   - name: 🇳🇱 荷兰 1
@@ -1122,87 +212,37 @@ proxies:
     password: qzj5NqakK4YvYYU87eFF
     port: 8389
     cipher: chacha20-ietf-poly1305
-  - name: 🇸🇬 新加坡 1
-    type: ss
-    server: 188.214.125.106
-    password: Zq4srheW4eeqMfGeWMTG
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇳🇴 挪威 4
+  - name: 🇳🇴 挪威 2
     type: ss
     server: 46.29.218.6
     password: Y6R9pAtvxxzmGC
     port: 3306
     cipher: aes-256-gcm
-  - name: 🇬🇧 英国 3
-    type: ss
-    server: 89.238.177.234
-    password: VPPqaR4qpLmNw37jaJg6
-    port: 8389
-    cipher: chacha20-ietf-poly1305
-  - name: 🇲🇹 马尔他 1
-    type: ss
-    server: 185.89.238.36
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    cipher: aes-256-cfb
-  - name: 🇨🇦 加拿大 7
-    type: trojan
-    server: t3.ssrsub.com
-    password: 1de99090-4bd5-4670-9cec-05f55b4c6917
-    udp: false
-    skip-cert-verify: false
-    sni: t3.ssrsub.com
-    port: 156
-  - name: 🇧🇪 比利时 2
+  - name: 🇧🇪 比利时 1
     server: 77.243.191.178
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 47GH3wQRw7V4Zhd35bFs
-  - name: 🇫🇮 芬兰 1
-    server: 37.143.129.186
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇬🇷 希腊 2
-    server: 185.51.134.210
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: mTrN2fMYeWJwrkWpTnL2
-  - name: 🇮🇳 印度 1
-    server: 192.46.210.73
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇮🇳 印度 2
-    server: 192.46.210.73
-    port: 5600
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇮🇳 印度 3
-    server: 192.46.210.73
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
   - name: 🇮🇱 以色列 2
     server: 212.199.61.55
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
     password: scDj68fv6xkMg2np9RgW
-  - name: 🇲🇾 马来西亚 2
-    server: 223.25.246.4
+  - name: 🇳🇴 挪威 3
+    server: 46.29.218.6
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇷🇺 俄罗斯 4
+    server: 82.202.220.242
     port: 8389
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: w4GUD28Bw9uCMdbc2pqA
-  - name: 🇳🇴 挪威 5
+    password: Kw6hMXQ2Z7ey7mf2Uqyr
+  - name: 🇳🇴 挪威 4
     server: 46.29.218.6
     port: 8090
     type: ss
@@ -1214,148 +254,29 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: Kw6hMXQ2Z7ey7mf2Uqyr
-  - name: 🇺🇸 美国 55
-    server: 70.39.71.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: XkH8z99cQguQ8ywK5jhV
-  - name: 🇧🇪 比利时 3
-    server: 77.243.191.178
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 47GH3wQRw7V4Zhd35bFs
-  - name: 🇫🇮 芬兰 2
-    server: 37.143.129.186
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: 🇬🇷 希腊 3
-    server: 185.51.134.210
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: mTrN2fMYeWJwrkWpTnL2
-  - name: 🇮🇳 印度 4
-    server: 192.46.210.73
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇮🇳 印度 5
-    server: 192.46.210.73
-    port: 5600
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇮🇳 印度 6
-    server: 192.46.210.73
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇲🇾 马来西亚 3
-    server: 223.25.246.4
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: w4GUD28Bw9uCMdbc2pqA
-  - name: 🇳🇴 挪威 6
-    server: 46.29.218.6
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇷🇺 俄罗斯 6
-    server: 82.202.220.242
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Kw6hMXQ2Z7ey7mf2Uqyr
-  - name: 🇺🇸 美国 56
-    server: 70.39.71.2
-    port: 8389
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: XkH8z99cQguQ8ywK5jhV
 proxy-groups:
   - name: 自动选择
     interval: 300
     type: select
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 🇦🇹 奥地利 1
-      - 🇦🇺 澳洲 1
       - 🇧🇪 比利时 1
-      - 🇧🇪 比利时 2
-      - 🇧🇪 比利时 3
-      - 🇧🇬 保加利亚 1
-      - 🇨🇦 加拿大 1
-      - 🇨🇦 加拿大 2
-      - 🇨🇦 加拿大 3
-      - 🇨🇦 加拿大 4
-      - 🇨🇦 加拿大 5
-      - 🇨🇦 加拿大 6
-      - 🇨🇦 加拿大 7
-      - 🇨🇳 中国 1
-      - 🇨🇳 中国 2
       - 🇩🇪 德国 1
-      - 🇩🇪 德国 2
-      - 🇩🇪 德国 3
-      - 🇩🇰 丹麦 1
-      - 🇫🇮 芬兰 1
-      - 🇫🇮 芬兰 2
       - 🇫🇷 法国 1
       - 🇬🇧 英国 1
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
       - 🇬🇷 希腊 1
-      - 🇬🇷 希腊 2
-      - 🇬🇷 希腊 3
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 10
-      - 🇭🇰 香港 11
-      - 🇭🇰 香港 12
-      - 🇭🇰 香港 13
-      - 🇭🇰 香港 14
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇭🇰 香港 6
-      - 🇭🇰 香港 7
-      - 🇭🇰 香港 8
-      - 🇭🇰 香港 9
       - 🇮🇱 以色列 1
       - 🇮🇱 以色列 2
-      - 🇮🇳 印度 1
-      - 🇮🇳 印度 2
-      - 🇮🇳 印度 3
-      - 🇮🇳 印度 4
-      - 🇮🇳 印度 5
-      - 🇮🇳 印度 6
-      - 🇲🇹 马尔他 1
-      - 🇲🇾 马来西亚 1
-      - 🇲🇾 马来西亚 2
-      - 🇲🇾 马来西亚 3
       - 🇳🇱 荷兰 1
       - 🇳🇴 挪威 1
       - 🇳🇴 挪威 2
       - 🇳🇴 挪威 3
       - 🇳🇴 挪威 4
-      - 🇳🇴 挪威 5
-      - 🇳🇴 挪威 6
-      - 🇳🇿 纽西兰 1
       - 🇷🇺 俄罗斯 1
       - 🇷🇺 俄罗斯 2
       - 🇷🇺 俄罗斯 3
       - 🇷🇺 俄罗斯 4
       - 🇷🇺 俄罗斯 5
-      - 🇷🇺 俄罗斯 6
-      - 🇸🇪 瑞典 1
-      - 🇸🇬 新加坡 1
       - 🇺🇳 其他 1
       - 🇺🇳 其他 10
       - 🇺🇳 其他 11
@@ -1365,131 +286,15 @@ proxy-groups:
       - 🇺🇳 其他 15
       - 🇺🇳 其他 16
       - 🇺🇳 其他 17
-      - 🇺🇳 其他 18
-      - 🇺🇳 其他 19
       - 🇺🇳 其他 2
-      - 🇺🇳 其他 20
-      - 🇺🇳 其他 21
-      - 🇺🇳 其他 22
-      - 🇺🇳 其他 23
-      - 🇺🇳 其他 24
-      - 🇺🇳 其他 25
-      - 🇺🇳 其他 26
-      - 🇺🇳 其他 27
-      - 🇺🇳 其他 28
-      - 🇺🇳 其他 29
       - 🇺🇳 其他 3
-      - 🇺🇳 其他 30
-      - 🇺🇳 其他 31
-      - 🇺🇳 其他 32
-      - 🇺🇳 其他 33
-      - 🇺🇳 其他 34
-      - 🇺🇳 其他 35
-      - 🇺🇳 其他 36
-      - 🇺🇳 其他 37
-      - 🇺🇳 其他 38
-      - 🇺🇳 其他 39
       - 🇺🇳 其他 4
-      - 🇺🇳 其他 40
-      - 🇺🇳 其他 41
-      - 🇺🇳 其他 42
-      - 🇺🇳 其他 43
-      - 🇺🇳 其他 44
-      - 🇺🇳 其他 45
-      - 🇺🇳 其他 46
-      - 🇺🇳 其他 47
-      - 🇺🇳 其他 48
-      - 🇺🇳 其他 49
       - 🇺🇳 其他 5
-      - 🇺🇳 其他 50
-      - 🇺🇳 其他 51
-      - 🇺🇳 其他 52
-      - 🇺🇳 其他 53
-      - 🇺🇳 其他 54
-      - 🇺🇳 其他 55
-      - 🇺🇳 其他 56
-      - 🇺🇳 其他 57
-      - 🇺🇳 其他 58
-      - 🇺🇳 其他 59
       - 🇺🇳 其他 6
-      - 🇺🇳 其他 60
-      - 🇺🇳 其他 61
-      - 🇺🇳 其他 62
-      - 🇺🇳 其他 63
-      - 🇺🇳 其他 64
-      - 🇺🇳 其他 65
-      - 🇺🇳 其他 66
-      - 🇺🇳 其他 67
-      - 🇺🇳 其他 68
-      - 🇺🇳 其他 69
       - 🇺🇳 其他 7
-      - 🇺🇳 其他 70
-      - 🇺🇳 其他 71
-      - 🇺🇳 其他 72
-      - 🇺🇳 其他 73
-      - 🇺🇳 其他 74
-      - 🇺🇳 其他 75
-      - 🇺🇳 其他 76
-      - 🇺🇳 其他 77
-      - 🇺🇳 其他 78
-      - 🇺🇳 其他 79
       - 🇺🇳 其他 8
-      - 🇺🇳 其他 80
-      - 🇺🇳 其他 81
       - 🇺🇳 其他 9
       - 🇺🇸 美国 1
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 17
-      - 🇺🇸 美国 18
-      - 🇺🇸 美国 19
       - 🇺🇸 美国 2
-      - 🇺🇸 美国 20
-      - 🇺🇸 美国 21
-      - 🇺🇸 美国 22
-      - 🇺🇸 美国 23
-      - 🇺🇸 美国 24
-      - 🇺🇸 美国 25
-      - 🇺🇸 美国 26
-      - 🇺🇸 美国 27
-      - 🇺🇸 美国 28
-      - 🇺🇸 美国 29
       - 🇺🇸 美国 3
-      - 🇺🇸 美国 30
-      - 🇺🇸 美国 31
-      - 🇺🇸 美国 32
-      - 🇺🇸 美国 33
-      - 🇺🇸 美国 34
-      - 🇺🇸 美国 35
-      - 🇺🇸 美国 36
-      - 🇺🇸 美国 37
-      - 🇺🇸 美国 38
-      - 🇺🇸 美国 39
       - 🇺🇸 美国 4
-      - 🇺🇸 美国 40
-      - 🇺🇸 美国 41
-      - 🇺🇸 美国 42
-      - 🇺🇸 美国 43
-      - 🇺🇸 美国 44
-      - 🇺🇸 美国 45
-      - 🇺🇸 美国 46
-      - 🇺🇸 美国 47
-      - 🇺🇸 美国 48
-      - 🇺🇸 美国 49
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 50
-      - 🇺🇸 美国 51
-      - 🇺🇸 美国 52
-      - 🇺🇸 美国 53
-      - 🇺🇸 美国 54
-      - 🇺🇸 美国 55
-      - 🇺🇸 美国 56
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
