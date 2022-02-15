@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "delay": "node src/lib/filterWithDelay.js",
-    "net": "node src/lib/netYaml.js"
+    "delay": "node src/lib/filterWithDelay.js"
   },
   "repository": {
     "type": "git",
