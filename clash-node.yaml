@@ -26,1174 +26,1168 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
-  - name: 🇬🇧 英国 1
-    server: gia.uk.tgproxy.wtf
-    port: 443
-    type: vmess
-    uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      host: gia.uk.tgproxy.wtf
   - name: 🇺🇸 美国 1
-    server: 169.197.141.91
-    port: 7306
+    server: 167.88.63.79
+    port: 8118
     type: ss
     cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 2
-    server: 169.197.141.91
-    port: 9101
-    type: ss
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇬🇧 英国 2
-    server: 51.68.205.180
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇬🇧 英国 3
-    server: 51.68.205.180
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇫🇷 法国 1
-    server: 62.210.209.50
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇮🇳 印度 1
-    server: 192.46.212.33
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
+    password: cdBIDV42DCwnfIN
   - name: 🇨🇦 加拿大 1
-    server: 134.195.196.147
-    port: 2375
+    server: 134.195.196.68
+    port: 8118
     type: ss
     cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 3
-    server: 38.75.136.21
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇬🇧 英国 4
-    server: 172.99.190.39
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇫🇷 法国 2
-    server: fg.jgw.tgproxy.wtf
-    port: 443
-    type: vmess
-    uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      host: fg.jgw.tgproxy.wtf
-  - name: 🇺🇸 美国 4
-    server: 38.75.136.21
-    port: 5601
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+    password: cdBIDV42DCwnfIN
   - name: 🇨🇦 加拿大 2
-    server: 134.195.196.193
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 5
-    server: 169.197.141.187
-    port: 5001
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇮🇳 印度 2
-    server: 192.46.212.33
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇬🇧 英国 5
-    server: 172.99.190.39
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇮🇳 印度 3
-    server: 172.104.206.165
-    port: 7001
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇫🇷 法国 3
-    server: 149.202.82.172
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇮🇳 印度 4
-    server: 192.46.212.33
-    port: 8080
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇨🇦 加拿大 3
-    server: 134.195.196.147
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇺🇸 美国 6
-    server: 38.75.136.21
-    port: 8882
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇩🇪 德国 1
-    server: 167.86.82.191
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1z7k5IMlPsvk
-  - name: 🇫🇷 法国 4
-    server: 62.210.209.50
-    port: 8882
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇺🇸 美国 7
-    server: usa-dallas.lvuft.com
-    port: 443
-    type: vmess
-    uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-    alterId: 4
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws
-      host: usa-dallas.lvuft.com
-  - name: 🇬🇧 英国 6
-    server: 51.68.205.180
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇬🇧 英国 7
-    server: 51.68.205.180
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇫🇷 法国 5
-    server: 62.210.209.50
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇮🇳 印度 5
-    server: 192.46.212.33
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇨🇦 加拿大 4
-    server: 134.195.196.147
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 8
-    server: 38.75.136.21
+    server: 134.195.196.227
     port: 5500
     type: ss
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
-  - name: 🇫🇷 法国 6
-    server: fg.jgw.tgproxy.wtf
-    port: 443
-    type: vmess
-    uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      host: fg.jgw.tgproxy.wtf
-  - name: 🇺🇸 美国 9
-    server: 38.75.136.21
-    port: 5601
+  - name: 🇺🇸 美国 2
+    server: 38.143.66.71
+    port: 8008
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇮🇳 印度 1
+    server: 172.105.39.228
+    port: 8888
     type: ss
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 5
-    server: 134.195.196.200
-    port: 6679
+  - name: 🇨🇦 加拿大 3
+    server: 134.195.196.227
+    port: 8118
     type: ss
     cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇮🇳 印度 6
-    server: 192.46.212.33
-    port: 8091
+    password: cdBIDV42DCwnfIN
+  - name: 🇮🇳 印度 2
+    server: 192.46.209.227
+    port: 5600
     type: ss
     cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇮🇳 印度 7
-    server: 172.104.206.165
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 3
+    server: 172.105.39.228
+    port: 5600
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 1
+    server: 51.255.66.185
     port: 7001
     type: ss
     cipher: aes-256-gcm
     password: RexnBgU7EV5ADxG
-  - name: 🇫🇷 法国 7
-    server: 149.202.82.172
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇨🇦 加拿大 6
-    server: 134.195.196.147
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇮🇳 印度 8
-    server: 192.46.212.33
-    port: 8080
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇮🇳 印度 9
-    server: aws.in.tgproxy.wtf
-    port: 21888
-    type: vmess
-    uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      host: aws.in.tgproxy.wtf
-  - name: 🇬🇧 英国 8
-    server: 172.99.190.39
-    port: 9101
-    type: ss
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇺🇸 美国 10
-    server: 38.75.136.21
-    port: 8882
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇦 加拿大 7
-    server: 134.195.196.147
+  - name: 🇬🇧 英国 1
+    server: 172.99.190.92
     port: 7307
     type: ss
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 🇩🇪 德国 2
-    server: 167.86.82.191
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1z7k5IMlPsvk
-  - name: 🇨🇳 中国 1
-    server: 128tw02.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: a.189.cn
-    udp: true
-  - name: 🇭🇰 香港 1
-    server: 128hk8.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 128hk8.fans8.xyz
-    udp: true
-  - name: 🇯🇵 日本 1
-    server: 14.152.92.80
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 2
-    server: 14.152.92.76
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 3
-    server: 42.157.195.243
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 4
-    server: 14.152.92.77
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 5
-    server: 42.157.195.245
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 6
-    server: 14.152.92.78
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 7
-    server: 14.152.92.79
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 8
-    server: 14.152.92.75
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 9
-    server: 107.wowogg.cyou
-    port: 52207
-    type: vmess
-    uuid: 08103798-414e-32b6-8748-2507732d2c51
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷 韩国 1
-    server: vn.mumi.bid
-    port: 10125
-    type: vmess
-    uuid: 83ae9f04-47f0-4e34-9a1c-9c2e5161f586
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vn.mumi.bid
-    udp: true
-  - name: 🇰🇷 韩国 2
-    server: amd.50k.one
-    port: 30943
-    type: vmess
-    uuid: a0654eba-7b58-4d64-cfdb-c006e5d38324
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷 韩国 3
-    server: 1031kr.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 1031kr.fans8.xyz
-    udp: true
-  - name: 🇰🇷 韩国 4
-    server: arm.50k.one
-    port: 39966
-    type: vmess
-    uuid: 608408f6-fd79-49a3-96ef-003266a773a0
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇵🇱 波兰 1
-    server: 0122us.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 0122us.fans8.xyz
-    udp: true
-  - name: 🇷🇺 俄罗斯 1
-    server: 128tw01.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 128tw01.fans8.xyz
-    udp: true
-  - name: 🇺🇸 美国 11
-    server: 42.157.195.230
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 12
-    server: 42.157.195.229
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 13
-    server: 42.157.195.238
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 14
-    server: 42.157.195.240
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 15
-    server: 42.157.195.233
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 16
-    server: 14.152.92.70
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 17
-    server: 42.157.195.231
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 18
-    server: 42.157.195.242
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 19
-    server: 42.157.195.232
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 20
-    server: 14.152.92.74
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 21
-    server: 42.157.195.234
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 22
-    server: 14.152.92.71
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 23
-    server: 14.152.92.73
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 24
-    server: 42.157.195.239
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇬🇧 英国 9
-    server: 51.68.205.180
-    port: 7306
+  - name: 🇮🇳 印度 4
+    server: 192.46.209.227
+    port: 7307
     type: ss
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 🇬🇧 英国 10
-    server: 51.68.205.180
-    port: 5003
+  - name: 🇬🇧 英国 2
+    server: 145.239.7.164
+    port: 3389
     type: ss
     cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇨🇳 中国 2
-    server: 128tw02.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: a.189.cn
-    udp: true
-  - name: 🇭🇰 香港 2
-    server: 128hk8.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 128hk8.fans8.xyz
-    udp: true
-  - name: 🇯🇵 日本 10
-    server: 14.152.92.79
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 11
-    server: 42.157.195.245
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 12
-    server: 14.152.92.78
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 13
-    server: 14.152.92.76
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 14
-    server: 14.152.92.75
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 15
-    server: 14.152.92.80
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 16
-    server: 42.157.195.244
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 17
-    server: 14.152.92.77
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 18
-    server: 42.157.195.243
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇯🇵 日本 19
-    server: 107.wowogg.cyou
-    port: 52207
-    type: vmess
-    uuid: 08103798-414e-32b6-8748-2507732d2c51
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷 韩国 5
-    server: 1031kr.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 1031kr.fans8.xyz
-    udp: true
-  - name: 🇷🇺 俄罗斯 2
-    server: 128tw01.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: 128tw01.fans8.xyz
-    udp: true
-  - name: 🇸🇬 新加坡 1
-    server: 14.152.92.81
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 25
-    server: us-am11.eqnode.net
-    port: 8080
-    type: ssr
-    cipher: aes-256-cfb
-    password: vGndzdmPB
-    protocol: origin
-    obfs: tls1.2_ticket_auth
-    protocol-param: ""
-    obfs-param: ""
-    udp: true
-  - name: 🇺🇸 美国 26
-    server: amu1ahfi.com
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 3
+    server: 145.239.7.164
     port: 443
-    type: vmess
-    uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-    alterId: 4
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        Host: amu1ahfi.com
-    udp: true
-  - name: 🇺🇸 美国 27
-    server: v1.ssrsub.com
-    port: 443
-    type: vmess
-    uuid: 8a233a34-36f4-400d-b7c8-93024e518ddb
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /ssrsub
-      headers:
-        Host: v1.ssrsub.com
-    udp: true
-  - name: 🇺🇸 美国 28
-    server: 42.157.195.234
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 29
-    server: 42.157.195.242
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 30
-    server: 14.152.92.70
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 31
-    server: 14.152.92.74
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 32
-    server: 42.157.195.241
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 33
-    server: 42.157.195.229
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 34
-    server: 42.157.195.230
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 35
-    server: 14.152.92.73
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 36
-    server: 14.152.92.71
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 37
-    server: 42.157.195.238
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 38
-    server: 42.157.195.239
-    port: 12127
-    type: ssr
-    cipher: aes-256-cfb
-    password: 68xdgu9eyif
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 600777:154T8b
-    obfs-param: 0f099600777.v23f7nM0
-    udp: true
-  - name: 🇺🇸 美国 39
-    server: 1222us.fans8.xyz
-    port: 80
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        Host: a.189.cn
-    udp: true
-  - name: 🇺🇸 美国 40
-    server: usa-dallas.lvuft.com
-    port: 443
-    type: vmess
-    uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-    alterId: 4
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws
-      host: usa-dallas.lvuft.com
-  - name: 🇬🇧 英国 11
-    server: 51.68.205.180
-    port: 7306
     type: ss
     cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇬🇧 英国 12
-    server: 51.68.205.180
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇫🇷 法国 8
-    server: 62.210.209.50
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇮🇳 印度 10
-    server: 192.46.212.33
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇨🇦 加拿大 8
-    server: 134.195.196.147
+    password: pKEW8JPByTVTLtM
+  - name: 🇺🇸 美国 3
+    server: 38.143.66.71
     port: 8091
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇺🇸 美国 41
-    server: 38.75.136.21
+  - name: 🇺🇸 美国 4
+    server: 38.143.66.71
     port: 5500
     type: ss
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 42
-    server: 38.75.136.21
-    port: 5601
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 9
-    server: 134.195.196.200
-    port: 8000
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇨🇦 加拿大 10
-    server: 134.195.196.200
-    port: 6679
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇮🇳 印度 11
-    server: 192.46.212.33
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 11
-    server: 134.195.196.200
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇨🇦 加拿大 12
-    server: 134.195.196.193
-    port: 6679
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇮🇳 印度 12
-    server: 172.104.206.165
-    port: 7001
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇫🇷 法国 9
-    server: 149.202.82.172
+  - name: 🇨🇦 加拿大 4
+    server: 134.195.196.227
     port: 7002
     type: ss
     cipher: aes-256-gcm
     password: RexnBgU7EV5ADxG
+  - name: 🇺🇸 美国 5
+    server: 38.91.102.86
+    port: 6697
+    type: ss
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇨🇦 加拿大 5
+    server: 134.195.196.227
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 6
+    server: 38.91.102.86
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 7
+    server: 38.143.66.71
+    port: 5001
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 8
+    server: 38.143.66.71
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇮🇳 印度 5
+    server: 45.79.121.117
+    port: 2376
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 🇬🇧 英国 4
+    server: 145.239.7.164
+    port: 2376
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 🇯🇵 日本 1
+    server: xmlinodejp2.aifx.eu.org
+    port: 443
+    type: vmess
+    uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /freebaipiao
+      headers:
+        host: xmlinodejp2.aifx.eu.org
+  - name: 🇫🇷 法国 2
+    server: 51.255.66.185
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇮🇳 印度 6
+    server: 45.79.121.117
+    port: 5601
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 9
+    server: 38.143.66.71
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇮🇳 印度 7
+    server: 172.105.39.228
+    port: 3306
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 3
+    server: 51.255.66.185
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇮🇳 印度 8
+    server: 192.46.209.227
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 10
+    server: 169.197.141.92
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇨🇦 加拿大 6
+    server: 134.195.196.227
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 9
+    server: 172.105.39.228
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 5
+    server: 172.99.190.92
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 6
+    server: 172.99.190.92
+    port: 9102
+    type: ss
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 🇫🇷 法国 4
+    server: 51.255.66.185
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 7
+    server: 172.99.190.92
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇫🇷 法国 5
+    server: 51.255.66.185
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 11
+    server: 38.91.102.86
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 12
+    server: 38.91.102.86
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 13
+    server: 38.91.102.86
+    port: 5003
+    type: ss
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 🇨🇦 加拿大 7
+    server: 134.195.196.227
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 14
+    server: 38.143.66.71
+    port: 8008
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇮🇳 印度 10
+    server: 172.105.39.228
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇨🇦 加拿大 8
+    server: 134.195.196.227
+    port: 8118
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 🇮🇳 印度 11
+    server: 192.46.209.227
+    port: 5600
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 12
+    server: 172.105.39.228
+    port: 5600
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 6
+    server: 51.255.66.185
+    port: 7001
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 8
+    server: 172.99.190.92
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
   - name: 🇮🇳 印度 13
-    server: 192.46.212.33
+    server: 192.46.209.227
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇬🇧 英国 9
+    server: 145.239.7.164
+    port: 3389
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 10
+    server: 145.239.7.164
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇨🇦 加拿大 9
+    server: 134.195.196.227
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇺🇸 美国 15
+    server: 38.91.102.86
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇺🇸 美国 16
+    server: 38.91.102.86
+    port: 6697
+    type: ss
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇨🇦 加拿大 10
+    server: 134.195.196.227
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 17
+    server: 38.91.102.86
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 18
+    server: 38.143.66.71
+    port: 5001
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 11
+    server: 172.99.190.92
+    port: 7306
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 19
+    server: 38.143.66.71
     port: 8080
     type: ss
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
   - name: 🇮🇳 印度 14
-    server: aws.in.tgproxy.wtf
-    port: 21888
-    type: vmess
-    uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /theuploadapi
-      host: aws.in.tgproxy.wtf
-  - name: 🇫🇷 法国 10
-    server: 62.210.209.50
-    port: 8881
+    server: 45.79.121.117
+    port: 2376
     type: ss
     cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇺🇸 美国 43
-    server: v8.ssrsub.com
+    password: faBAoD54k87UJG7
+  - name: 🇯🇵 日本 2
+    server: xmlinodejp2.aifx.eu.org
     port: 443
     type: vmess
-    uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061
+    uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /ssrsub
-  - name: 🇺🇸 美国 44
-    server: 38.75.136.21
-    port: 8882
+      path: /freebaipiao
+      headers:
+        host: xmlinodejp2.aifx.eu.org
+  - name: 🇫🇷 法国 7
+    server: 51.255.66.185
+    port: 8080
     type: ss
     cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇦 加拿大 13
-    server: 134.195.196.147
+    password: KixLvKzwjekG00rm
+  - name: 🇮🇳 印度 15
+    server: 45.79.121.117
+    port: 5601
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 16
+    server: 172.105.39.228
+    port: 3306
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 8
+    server: 51.255.66.185
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇮🇳 印度 17
+    server: 192.46.209.227
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 20
+    server: 169.197.141.92
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇨🇦 加拿大 11
+    server: 134.195.196.227
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 18
+    server: 172.105.39.228
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 12
+    server: 172.99.190.92
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇫🇷 法国 9
+    server: 51.255.66.185
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 13
+    server: 172.99.190.92
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇫🇷 法国 10
+    server: 51.255.66.185
     port: 7307
     type: ss
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 🇩🇪 德国 3
-    server: 167.86.82.191
+  - name: 🇺🇸 美国 21
+    server: 38.91.102.86
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 22
+    server: 38.91.102.86
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 23
+    server: 38.91.102.86
+    port: 5003
+    type: ss
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 🇨🇦 加拿大 12
+    server: 134.195.196.227
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 24
+    server: 38.143.66.71
+    port: 8091
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇺🇸 美国 25
+    server: 38.91.102.86
+    port: 8118
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 🇺🇸 美国 26
+    server: 38.143.66.71
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 27
+    server: 38.91.102.86
+    port: 6697
+    type: ss
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇯🇵 日本 3
+    server: xmlinodejp2.aifx.eu.org
+    port: 443
+    type: vmess
+    uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /freebaipiao
+      headers:
+        host: xmlinodejp2.aifx.eu.org
+  - name: 🇺🇸 美国 28
+    server: 38.143.66.71
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇺🇸 美国 29
+    server: 169.197.141.92
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 30
+    server: 38.91.102.86
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 31
+    server: 38.91.102.86
+    port: 5003
+    type: ss
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 🇨🇳 中国 1
+    server: 117.28.243.164
+    port: 8007
+    type: ss
+    cipher: rc4-md5
+    password: passinfo123
+  - name: 🇨🇳 中国 2
+    server: 183.195.235.47
+    port: 45089
+    type: ssr
+    cipher: aes-256-cfb
+    password: hGkQ6915tD
+    protocol: auth_aes128_md5
+    obfs: tls1.2_ticket_auth
+    protocol-param: 32381:C2pHyiQfgm
+    obfs-param: ajax.microsoft.com
+  - name: 🇨🇳 中国 3
+    server: 223.166.157.192
+    port: 60010
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.192
+  - name: 🇨🇳 中国 4
+    server: 139.227.223.3
+    port: 60010
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.223.3
+  - name: 🇨🇳 中国 5
+    server: 139.227.222.202
+    port: 60004
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.222.202
+  - name: 🇨🇳 中国 6
+    server: 139.227.222.202
+    port: 60009
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.222.202
+  - name: 🇨🇳 中国 7
+    server: 139.227.223.3
+    port: 60003
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.223.3
+  - name: 🇨🇳 中国 8
+    server: 139.227.222.202
+    port: 60010
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.222.202
+  - name: 🇨🇳 中国 9
+    server: 223.166.157.41
+    port: 60003
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.41
+  - name: 🇨🇳 中国 10
+    server: 223.166.157.41
+    port: 60010
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.41
+  - name: 🇨🇳 中国 11
+    server: 223.166.157.192
+    port: 60004
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.192
+  - name: 🇨🇳 中国 12
+    server: 223.166.157.41
+    port: 60009
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.41
+  - name: 🇨🇳 中国 13
+    server: 139.227.223.3
+    port: 60009
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.223.3
+  - name: 🇨🇳 中国 14
+    server: 223.166.157.192
+    port: 60009
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 223.166.157.192
+  - name: 🇨🇳 中国 15
+    server: 139.227.222.202
+    port: 60003
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.222.202
+  - name: 🇨🇳 中国 16
+    server: 139.227.223.3
+    port: 60004
+    type: vmess
+    uuid: e487b139-f286-3593-b763-d740c2096a0f
+    alterId: 1
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 139.227.223.3
+  - name: 🇭🇰 香港 1
+    server: 104.208.109.229
+    port: 52330
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 2
+    server: 92.wowogg.cyou
+    port: 52292
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 3
+    server: 121.wowogg.cyou
+    port: 52221
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 4
+    server: 115.wowogg.cyou
+    port: 52215
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 5
+    server: 129.wowogg.cyou
+    port: 52329
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 6
+    server: 13.70.3.135
+    port: 52287
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 7
+    server: 87.wowogg.cyou
+    port: 52287
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 8
+    server: 137.wowogg.cyou
+    port: 52437
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 9
+    server: 20.187.109.21
+    port: 52215
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 10
+    server: 106.wowogg.cyou
+    port: 11223
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 11
+    server: 20.187.93.12
+    port: 52224
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 12
+    server: 123.wowogg.cyou
+    port: 52223
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 13
+    server: 20.187.109.21
+    port: 52295
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 14
+    server: 119.wowogg.cyou
+    port: 52219
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 15
+    server: 103.wowogg.cyou
+    port: 52203
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 16
+    server: 125.wowogg.cyou
+    port: 52225
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 17
+    server: 100.wowogg.cyou
+    port: 11220
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 18
+    server: 98.wowogg.cyou
+    port: 52298
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 19
+    server: 124.wowogg.cyou
+    port: 52224
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港 20
+    server: 118.wowogg.cyou
+    port: 52218
+    type: vmess
+    uuid: 08103798-414e-32b6-8748-2507732d2c51
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: 🇨🇦 加拿大 13
+    server: 134.195.196.227
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 32
+    server: 38.143.66.71
+    port: 8008
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇮🇳 印度 19
+    server: 172.105.39.228
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 20
+    server: 192.46.209.227
+    port: 5600
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 21
+    server: 172.105.39.228
+    port: 5600
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 11
+    server: 51.255.66.185
+    port: 7001
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 14
+    server: 172.99.190.92
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇮🇳 印度 22
+    server: 192.46.209.227
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇬🇧 英国 15
+    server: 145.239.7.164
+    port: 3389
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇨🇦 加拿大 14
+    server: 134.195.196.227
     port: 443
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1z7k5IMlPsvk
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇺🇸 美国 33
+    server: 38.143.66.71
+    port: 8091
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇺🇸 美国 34
+    server: 38.91.102.86
+    port: 8118
+    type: ss
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 🇺🇸 美国 35
+    server: 38.143.66.71
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇨🇦 加拿大 15
+    server: 134.195.196.227
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇺🇸 美国 36
+    server: 38.91.102.86
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇨🇦 加拿大 16
+    server: 134.195.196.227
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 37
+    server: 38.91.102.86
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 38
+    server: 38.143.66.71
+    port: 5001
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 16
+    server: 172.99.190.92
+    port: 7306
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 39
+    server: 38.143.66.71
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇮🇳 印度 23
+    server: 45.79.121.117
+    port: 2376
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 🇬🇧 英国 17
+    server: 145.239.7.164
+    port: 2376
+    type: ss
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 🇯🇵 日本 4
+    server: xmlinodejp2.aifx.eu.org
+    port: 443
+    type: vmess
+    uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /freebaipiao
+      headers:
+        host: xmlinodejp2.aifx.eu.org
+  - name: 🇫🇷 法国 12
+    server: 51.255.66.185
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇮🇳 印度 24
+    server: 45.79.121.117
+    port: 5601
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 40
+    server: 38.143.66.71
+    port: 8090
+    type: ss
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 🇮🇳 印度 25
+    server: 172.105.39.228
+    port: 3306
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇫🇷 法国 13
+    server: 51.255.66.185
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇮🇳 印度 26
+    server: 192.46.209.227
+    port: 8080
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 41
+    server: 169.197.141.92
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇨🇦 加拿大 17
+    server: 134.195.196.227
+    port: 8888
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇮🇳 印度 27
+    server: 172.105.39.228
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 18
+    server: 172.99.190.92
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇫🇷 法国 14
+    server: 51.255.66.185
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 19
+    server: 172.99.190.92
+    port: 443
+    type: ss
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇫🇷 法国 15
+    server: 51.255.66.185
+    port: 7307
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 42
+    server: 38.91.102.86
+    port: 8009
+    type: ss
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 43
+    server: 38.91.102.86
+    port: 5500
+    type: ss
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 🇺🇸 美国 44
+    server: 38.91.102.86
+    port: 5003
+    type: ss
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
 proxy-groups:
   - name: 自动选择
     interval: 300
@@ -1205,6 +1199,10 @@ proxy-groups:
       - 🇨🇦 加拿大 11
       - 🇨🇦 加拿大 12
       - 🇨🇦 加拿大 13
+      - 🇨🇦 加拿大 14
+      - 🇨🇦 加拿大 15
+      - 🇨🇦 加拿大 16
+      - 🇨🇦 加拿大 17
       - 🇨🇦 加拿大 2
       - 🇨🇦 加拿大 3
       - 🇨🇦 加拿大 4
@@ -1214,12 +1212,28 @@ proxy-groups:
       - 🇨🇦 加拿大 8
       - 🇨🇦 加拿大 9
       - 🇨🇳 中国 1
+      - 🇨🇳 中国 10
+      - 🇨🇳 中国 11
+      - 🇨🇳 中国 12
+      - 🇨🇳 中国 13
+      - 🇨🇳 中国 14
+      - 🇨🇳 中国 15
+      - 🇨🇳 中国 16
       - 🇨🇳 中国 2
-      - 🇩🇪 德国 1
-      - 🇩🇪 德国 2
-      - 🇩🇪 德国 3
+      - 🇨🇳 中国 3
+      - 🇨🇳 中国 4
+      - 🇨🇳 中国 5
+      - 🇨🇳 中国 6
+      - 🇨🇳 中国 7
+      - 🇨🇳 中国 8
+      - 🇨🇳 中国 9
       - 🇫🇷 法国 1
       - 🇫🇷 法国 10
+      - 🇫🇷 法国 11
+      - 🇫🇷 法国 12
+      - 🇫🇷 法国 13
+      - 🇫🇷 法国 14
+      - 🇫🇷 法国 15
       - 🇫🇷 法国 2
       - 🇫🇷 法国 3
       - 🇫🇷 法国 4
@@ -1232,6 +1246,13 @@ proxy-groups:
       - 🇬🇧 英国 10
       - 🇬🇧 英国 11
       - 🇬🇧 英国 12
+      - 🇬🇧 英国 13
+      - 🇬🇧 英国 14
+      - 🇬🇧 英国 15
+      - 🇬🇧 英国 16
+      - 🇬🇧 英国 17
+      - 🇬🇧 英国 18
+      - 🇬🇧 英国 19
       - 🇬🇧 英国 2
       - 🇬🇧 英国 3
       - 🇬🇧 英国 4
@@ -1241,14 +1262,45 @@ proxy-groups:
       - 🇬🇧 英国 8
       - 🇬🇧 英国 9
       - 🇭🇰 香港 1
+      - 🇭🇰 香港 10
+      - 🇭🇰 香港 11
+      - 🇭🇰 香港 12
+      - 🇭🇰 香港 13
+      - 🇭🇰 香港 14
+      - 🇭🇰 香港 15
+      - 🇭🇰 香港 16
+      - 🇭🇰 香港 17
+      - 🇭🇰 香港 18
+      - 🇭🇰 香港 19
       - 🇭🇰 香港 2
+      - 🇭🇰 香港 20
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 5
+      - 🇭🇰 香港 6
+      - 🇭🇰 香港 7
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
       - 🇮🇳 印度 1
       - 🇮🇳 印度 10
       - 🇮🇳 印度 11
       - 🇮🇳 印度 12
       - 🇮🇳 印度 13
       - 🇮🇳 印度 14
+      - 🇮🇳 印度 15
+      - 🇮🇳 印度 16
+      - 🇮🇳 印度 17
+      - 🇮🇳 印度 18
+      - 🇮🇳 印度 19
       - 🇮🇳 印度 2
+      - 🇮🇳 印度 20
+      - 🇮🇳 印度 21
+      - 🇮🇳 印度 22
+      - 🇮🇳 印度 23
+      - 🇮🇳 印度 24
+      - 🇮🇳 印度 25
+      - 🇮🇳 印度 26
+      - 🇮🇳 印度 27
       - 🇮🇳 印度 3
       - 🇮🇳 印度 4
       - 🇮🇳 印度 5
@@ -1257,33 +1309,9 @@ proxy-groups:
       - 🇮🇳 印度 8
       - 🇮🇳 印度 9
       - 🇯🇵 日本 1
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 11
-      - 🇯🇵 日本 12
-      - 🇯🇵 日本 13
-      - 🇯🇵 日本 14
-      - 🇯🇵 日本 15
-      - 🇯🇵 日本 16
-      - 🇯🇵 日本 17
-      - 🇯🇵 日本 18
-      - 🇯🇵 日本 19
       - 🇯🇵 日本 2
       - 🇯🇵 日本 3
       - 🇯🇵 日本 4
-      - 🇯🇵 日本 5
-      - 🇯🇵 日本 6
-      - 🇯🇵 日本 7
-      - 🇯🇵 日本 8
-      - 🇯🇵 日本 9
-      - 🇰🇷 韩国 1
-      - 🇰🇷 韩国 2
-      - 🇰🇷 韩国 3
-      - 🇰🇷 韩国 4
-      - 🇰🇷 韩国 5
-      - 🇵🇱 波兰 1
-      - 🇷🇺 俄罗斯 1
-      - 🇷🇺 俄罗斯 2
-      - 🇸🇬 新加坡 1
       - 🇺🇸 美国 1
       - 🇺🇸 美国 10
       - 🇺🇸 美国 11
