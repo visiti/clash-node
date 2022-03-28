@@ -26,1038 +26,334 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
+  - name: 🇹🇼 台湾 1
+    server: 0319tw123.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /nmsl
+      headers:
+        host: 0319tw123.fans8.xyz
+  - name: 🇹🇼 台湾 2
+    server: 0322tw.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /nl
+      headers:
+        host: 0322tw.fans8.xyz
+  - name: 🇹🇼 台湾 3
+    server: 0314tw02.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        host: 0314tw02.fans8.xyz
   - name: 🇺🇸 美国 1
-    server: 169.197.142.99
+    server: cn2.v2jx.site
     port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇺🇸 美国 2
-    server: 38.143.66.71
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇸 美国 3
-    server: 38.143.66.71
-    port: 6379
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇨🇦 加拿大 1
-    server: 134.195.196.81
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 2
-    server: 134.195.196.81
-    port: 8882
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇦 加拿大 3
-    server: 134.195.196.81
-    port: 2375
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇺🇸 美国 4
-    server: 142.202.48.81
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 4
-    server: 134.195.196.81
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇨🇦 加拿大 5
-    server: 134.195.196.81
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇨🇦 加拿大 6
-    server: 134.195.196.81
-    port: 5001
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 7
-    server: 134.195.196.81
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇨🇦 加拿大 8
-    server: 134.195.196.81
-    port: 7001
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
+    type: vmess
+    uuid: d716e745-62f8-498e-af97-3a1e096d8c84
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: cn2.v2jx.site
   - name: 🇬🇧 英国 1
-    server: 145.239.7.164
-    port: 2376
+    server: kr.jddg.me
+    port: 443
+    type: vmess
+    uuid: d716e745-62f8-498e-af97-3a1e096d8c84
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: kr.jddg.me
+  - name: 🇺🇸 美国 2
+    server: 38.114.114.69
+    port: 9101
     type: ss
     cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇨🇦 加拿大 9
-    server: 134.195.196.81
+    password: e4FCWrgpkji3QY
+  - name: 🇨🇦 加拿大 1
+    server: 134.195.196.51
     port: 8000
     type: ss
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
-  - name: 🇨🇦 加拿大 10
-    server: 134.195.196.81
-    port: 3306
+  - name: 🇺🇸 美国 3
+    server: 167.88.63.108
+    port: 7001
     type: ss
     cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 11
-    server: 134.195.196.81
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 5
-    server: 169.197.142.99
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 12
-    server: 134.195.196.81
-    port: 5500
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇫🇷 法国 1
-    server: 51.255.66.185
+    password: RexnBgU7EV5ADxG
+  - name: 🇻🇳 越南 1
+    server: 0319hzm01.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /nmsl
+      headers:
+        host: 0319hzm01.fans8.xyz
+  - name: 🇨🇦 加拿大 2
+    server: 134.195.198.211
     port: 443
     type: ss
     cipher: aes-256-gcm
     password: pKEW8JPByTVTLtM
-  - name: 🇫🇷 法国 2
-    server: 51.255.66.185
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
   - name: 🇬🇧 英国 2
-    server: 145.239.7.164
-    port: 3389
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇫🇷 法国 3
-    server: 198.244.150.26
-    port: 826
+    server: 78.129.253.9
+    port: 809
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: sF43Xt2gONqcgFX563
-  - name: 🇨🇳 中国 1
-    server: 42.193.48.64
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇺🇳 其他 1
-    server: scaleway.ddns1312.top
-    port: 443
-    type: vmess
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /root/
-  - name: 🇨🇳 中国 2
-    server: flbgpi.yixuedianzishu.com
-    port: 58515
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 3
-    server: flbgpi.yixuedianzishu.com
-    port: 58533
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 4
-    server: flbgpi.yixuedianzishu.com
-    port: 58537
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 5
-    server: flbgpi.yixuedianzishu.com
-    port: 58540
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 6
-    server: flbgpi.yixuedianzishu.com
-    port: 58535
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 7
-    server: flbgpi.yixuedianzishu.com
-    port: 58538
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 8
-    server: flbgpi.yixuedianzishu.com
-    port: 58504
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 9
-    server: flbgpi.yixuedianzishu.com
-    port: 58503
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 10
-    server: flbgpi.yixuedianzishu.com
-    port: 58532
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 11
-    server: flbgpi.yixuedianzishu.com
-    port: 58501
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 12
-    server: flbgpi.yixuedianzishu.com
-    port: 58534
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 13
-    server: flbgpi.yixuedianzishu.com
-    port: 58531
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 14
-    server: flbgpi.yixuedianzishu.com
-    port: 58536
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 15
-    server: flbgpi.yixuedianzishu.com
-    port: 58542
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 16
-    server: flbgpi.yixuedianzishu.com
-    port: 58502
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 17
-    server: flbgpi.yixuedianzishu.com
-    port: 58539
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 18
-    server: flbgpi.yixuedianzishu.com
-    port: 58543
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 19
-    server: flbgpi.yixuedianzishu.com
-    port: 58505
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 20
-    server: flbgpi.yixuedianzishu.com
-    port: 58521
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 21
-    server: flbgpi.yixuedianzishu.com
-    port: 58545
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 22
-    server: flbgpi.yixuedianzishu.com
-    port: 58541
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 1
-    server: china-f4s-az-hk.898868.xyz
-    port: 46436
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 23
-    server: flbgpi.yixuedianzishu.com
-    port: 58522
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 2
-    server: china-f4s-az-hk.898868.xyz
-    port: 43012
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 24
-    server: flbgpi.yixuedianzishu.com
-    port: 58544
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 3
-    server: china-f4s-az-hk.898868.xyz
-    port: 27627
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 4
-    server: china-f4s-az-hk.898868.xyz
-    port: 35303
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 25
-    server: flbgpi.yixuedianzishu.com
-    port: 58523
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 5
-    server: china-f4s-az-hk.898868.xyz
-    port: 42130
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 26
-    server: shcn202.zerohost.live
-    port: 10802
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 27
-    server: iepl04.zerohost.live
-    port: 11003
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 28
-    server: flbgpi.yixuedianzishu.com
-    port: 58552
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 29
-    server: flbgpi.yixuedianzishu.com
-    port: 58551
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 30
-    server: shcn202.zerohost.live
-    port: 10803
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 31
-    server: flbgpi.yixuedianzishu.com
-    port: 58555
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 32
-    server: flbgpi.yixuedianzishu.com
-    port: 58553
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 6
-    server: china-f4s-az-hk.898868.xyz
-    port: 37342
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇭🇰 香港 7
-    server: china-f4s-az-hk.898868.xyz
-    port: 37817
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 33
-    server: iepl02.zerohost.live
-    port: 11018
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 34
-    server: iepl04.zerohost.live
-    port: 11017
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 35
-    server: iepl01.zerohost.live
-    port: 11014
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 36
-    server: iepl02.zerohost.live
-    port: 11015
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇭🇰 香港 8
-    server: china-f4s-az-hk.898868.xyz
-    port: 51645
-    type: vmess
-    uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 37
-    server: iepl01.zerohost.live
-    port: 11013
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 38
-    server: iepl03.zerohost.live
-    port: 11011
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 39
-    server: iepl01.zerohost.live
-    port: 11009
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 40
-    server: iepl02.zerohost.live
-    port: 11010
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 41
-    server: shcn202.zerohost.live
-    port: 10804
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 42
-    server: shcn202.zerohost.live
-    port: 10805
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 43
-    server: iepl03.zerohost.live
-    port: 11007
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 44
-    server: 183.232.56.81
-    port: 16627
-    type: vmess
-    uuid: 5fba0013-29be-3008-911b-f127aac4f676
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 45
-    server: gzyd1.noded.one
-    port: 19500
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 46
-    server: gzyd1.noded.one
-    port: 19501
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 47
-    server: gzyd1.noded.one
-    port: 10801
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 48
-    server: iepl01.zerohost.live
-    port: 11000
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      path: /
-  - name: 🇨🇳 中国 49
-    server: iepl02.zerohost.live
-    port: 11001
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇨🇳 中国 50
-    server: iepl02.zerohost.live
-    port: 11006
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-  - name: 🇺🇸 美国 6
-    server: flbgpi.yixuedianzishu.com
-    port: 58505
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 🇹🇼 台湾 1
-    server: flbgpi.yixuedianzishu.com
-    port: 58538
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 🇭🇰 香港 9
-    server: gzyd1.noded.one
-    port: 10801
-    type: vmess
-    uuid: c008a763-2123-312f-bae6-bf7630517e22
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /v2ray
-      headers:
-        host: aweikeji-YouTube-TG
-  - name: 🇺🇳 其他 2
-    server: bi.oracleusa.ml
-    port: 2053
-    type: vmess
-    uuid: d9d24ce4-7af4-47b6-84a0-6dd13c8a5c8d
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: bi.oracleusa.ml
-  - name: 🇺🇸 美国 7
-    server: flbgpi.yixuedianzishu.com
-    port: 58513
-    type: vmess
-    uuid: b3184351-0436-30bf-abc1-a9b551b1cb99
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: tcp
-  - name: 🇺🇳 其他 3
-    server: 42.193.48.64
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    network: tcp
-    ws-opts:
-      headers:
-        host: 42.193.48.64
-  - name: 🇺🇸 美国 8
-    server: 38.143.66.71
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇺🇸 美国 9
-    server: 38.143.66.71
-    port: 6379
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇨🇦 加拿大 13
-    server: 134.195.196.81
-    port: 6679
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇨🇦 加拿大 14
-    server: 134.195.196.81
+    password: G!yBwPWH3Vao
+  - name: 🇺🇸 美国 4
+    server: 169.197.142.99
     port: 8091
     type: ss
     cipher: aes-256-gcm
     password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 15
-    server: 134.195.196.81
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇨🇦 加拿大 16
-    server: 134.195.196.81
-    port: 8882
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇺🇸 美国 10
-    server: 142.202.48.81
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 17
-    server: 134.195.196.81
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇨🇦 加拿大 18
-    server: 134.195.196.81
-    port: 8881
-    type: ss
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 🇨🇦 加拿大 19
-    server: 134.195.196.81
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇨🇦 加拿大 20
-    server: 134.195.196.81
-    port: 8008
-    type: ss
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇨🇦 加拿大 21
-    server: 134.195.196.81
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 🇨🇦 加拿大 22
-    server: 134.195.196.81
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 23
-    server: 134.195.196.81
-    port: 2376
-    type: ss
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇨🇦 加拿大 24
-    server: 134.195.196.81
-    port: 9102
-    type: ss
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇨🇦 加拿大 25
-    server: 134.195.196.3
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇨🇦 加拿大 26
-    server: 134.195.196.81
-    port: 3306
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 27
-    server: 134.195.196.81
-    port: 5000
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 28
-    server: 134.195.196.81
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇨🇦 加拿大 29
-    server: 134.195.196.81
+  - name: 🇨🇦 加拿大 3
+    server: 134.195.196.68
     port: 6379
     type: ss
     cipher: aes-256-gcm
     password: zDNVedRFPQexG9v
-  - name: 🇫🇷 法国 4
-    server: 51.255.66.185
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 11
-    server: 169.197.142.99
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇨🇦 加拿大 30
-    server: 134.195.196.81
-    port: 8119
-    type: ss
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 🇫🇷 法国 5
-    server: 51.255.66.185
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 12
-    server: 38.143.66.71
-    port: 6379
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇺🇸 美国 13
-    server: 142.202.48.81
-    port: 8090
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 31
-    server: 134.195.196.81
-    port: 5600
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 32
-    server: 134.195.196.81
+  - name: 🇺🇸 美国 5
+    server: 38.114.114.69
     port: 6697
     type: ss
     cipher: aes-256-gcm
     password: TEzjfAYq2IjtuoS
-  - name: 🇨🇦 加拿大 33
-    server: 134.195.196.81
-    port: 9102
+  - name: 🇺🇸 美国 6
+    server: 169.197.142.99
+    port: 443
     type: ss
     cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇨🇳 中国 51
-    server: 120.197.85.73
-    port: 5001
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 708de56e-ada7-4bab-86ce-dadd4beabd62
-  - name: 🇨🇦 加拿大 34
-    server: 134.195.196.81
-    port: 3306
+    password: pKEW8JPByTVTLtM
+  - name: 🇬🇧 英国 3
+    server: 172.99.190.92
+    port: 8888
     type: ss
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 7
+    server: 167.88.63.108
+    port: 7002
+    type: ss
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇬🇧 英国 4
+    server: 172.99.190.92
+    port: 6679
+    type: ss
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇨🇦 加拿大 4
+    server: 134.195.196.68
+    port: 7306
+    type: ss
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 8
+    server: 38.114.114.69
+    port: 6697
+    type: ss
+    country: 🇺🇸_US_美国_长风分享3月28日_8
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇹🇼 台湾 4
+    server: 0314tw02.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    country: 🇹🇼_TW_台湾_长风分享3月28日_22
+    skip-cert-verify: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        host: 0314tw02.fans8.xyz
+  - name: 🇨🇦 加拿大 5
+    server: 134.195.196.51
+    port: 3389
+    type: ss
+    country: 🇨🇦_CA_加拿大_长风分享3月28日_24
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇬🇧 英国 5
+    server: 172.99.190.92
+    port: 443
+    type: ss
+    country: 🇬🇧_GB_英国_长风分享3月28日_34
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 🇺🇸 美国 9
+    server: 169.197.142.99
+    port: 7002
+    type: ss
+    country: 🇺🇸_US_美国_长风分享3月28日_41
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 🇹🇼 台湾 5
+    server: 0322tw.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    country: 🇹🇼_TW_台湾_长风分享3月28日_57
+    skip-cert-verify: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /nl
+      headers:
+        host: 0322tw.fans8.xyz
+  - name: 🇺🇸 美国 10
+    server: 38.114.114.69
+    port: 9101
+    type: ss
+    country: 🇺🇸_US_美国_长风分享3月28日_70
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 🇺🇸 美国 11
+    server: 167.88.63.108
+    port: 6679
+    type: ss
+    country: 🇺🇸_US_美国_长风分享3月28日_84
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇬🇧 英国 6
+    server: 172.99.190.92
+    port: 8888
+    type: ss
+    country: 🇬🇧_GB_英国_长风分享3月28日_86
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 12
+    server: 169.197.142.99
+    port: 9101
+    type: ss
+    country: 🇺🇸_US_美国_长风分享3月28日_100
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 🇺🇸 美国 13
+    server: 38.114.114.69
+    port: 6697
+    type: ss
+    country: 🇺🇸_US_美国_8
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇬🇧 英国 7
+    server: 172.99.190.92
+    port: 6679
+    type: ss
+    country: 🇬🇧_GB_英国_13
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇺🇸 美国 14
+    server: 169.197.142.99
+    port: 6679
+    type: ss
+    country: 🇺🇸_US_美国_17
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 🇹🇼 台湾 6
+    server: 0314tw02.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    country: 🇹🇼_TW_台湾_22
+    skip-cert-verify: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ray
+      headers:
+        host: 0314tw02.fans8.xyz
+  - name: 🇨🇦 加拿大 6
+    server: 134.195.196.51
+    port: 3389
+    type: ss
+    country: 🇨🇦_CA_加拿大_24
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇨🇦 加拿大 7
+    server: 134.195.196.3
+    port: 3306
+    type: ss
+    country: 🇨🇦_CA_加拿大_30
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 🇺🇸 美国 15
+    server: 38.114.114.69
+    port: 6379
+    type: ss
+    country: 🇺🇸_US_美国_35
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: 🇹🇼 台湾 7
+    server: 0322tw.fans8.xyz
+    port: 443
+    type: vmess
+    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+    alterId: 2
+    cipher: auto
+    country: 🇹🇼_TW_台湾_57
+    skip-cert-verify: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /nl
+      headers:
+        host: 0322tw.fans8.xyz
+  - name: 🇬🇧 英国 8
+    server: 172.99.190.92
+    port: 7307
+    type: ss
+    country: 🇬🇧_GB_英国_72
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 🇺🇸 美国 16
+    server: 38.114.114.69
+    port: 8882
+    type: ss
+    country: 🇺🇸_US_美国_2
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
 proxy-groups:
   - name: 自动选择
     interval: 300
@@ -1065,115 +361,35 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - 🇨🇦 加拿大 1
-      - 🇨🇦 加拿大 10
-      - 🇨🇦 加拿大 11
-      - 🇨🇦 加拿大 12
-      - 🇨🇦 加拿大 13
-      - 🇨🇦 加拿大 14
-      - 🇨🇦 加拿大 15
-      - 🇨🇦 加拿大 16
-      - 🇨🇦 加拿大 17
-      - 🇨🇦 加拿大 18
-      - 🇨🇦 加拿大 19
       - 🇨🇦 加拿大 2
-      - 🇨🇦 加拿大 20
-      - 🇨🇦 加拿大 21
-      - 🇨🇦 加拿大 22
-      - 🇨🇦 加拿大 23
-      - 🇨🇦 加拿大 24
-      - 🇨🇦 加拿大 25
-      - 🇨🇦 加拿大 26
-      - 🇨🇦 加拿大 27
-      - 🇨🇦 加拿大 28
-      - 🇨🇦 加拿大 29
       - 🇨🇦 加拿大 3
-      - 🇨🇦 加拿大 30
-      - 🇨🇦 加拿大 31
-      - 🇨🇦 加拿大 32
-      - 🇨🇦 加拿大 33
-      - 🇨🇦 加拿大 34
       - 🇨🇦 加拿大 4
       - 🇨🇦 加拿大 5
       - 🇨🇦 加拿大 6
       - 🇨🇦 加拿大 7
-      - 🇨🇦 加拿大 8
-      - 🇨🇦 加拿大 9
-      - 🇨🇳 中国 1
-      - 🇨🇳 中国 10
-      - 🇨🇳 中国 11
-      - 🇨🇳 中国 12
-      - 🇨🇳 中国 13
-      - 🇨🇳 中国 14
-      - 🇨🇳 中国 15
-      - 🇨🇳 中国 16
-      - 🇨🇳 中国 17
-      - 🇨🇳 中国 18
-      - 🇨🇳 中国 19
-      - 🇨🇳 中国 2
-      - 🇨🇳 中国 20
-      - 🇨🇳 中国 21
-      - 🇨🇳 中国 22
-      - 🇨🇳 中国 23
-      - 🇨🇳 中国 24
-      - 🇨🇳 中国 25
-      - 🇨🇳 中国 26
-      - 🇨🇳 中国 27
-      - 🇨🇳 中国 28
-      - 🇨🇳 中国 29
-      - 🇨🇳 中国 3
-      - 🇨🇳 中国 30
-      - 🇨🇳 中国 31
-      - 🇨🇳 中国 32
-      - 🇨🇳 中国 33
-      - 🇨🇳 中国 34
-      - 🇨🇳 中国 35
-      - 🇨🇳 中国 36
-      - 🇨🇳 中国 37
-      - 🇨🇳 中国 38
-      - 🇨🇳 中国 39
-      - 🇨🇳 中国 4
-      - 🇨🇳 中国 40
-      - 🇨🇳 中国 41
-      - 🇨🇳 中国 42
-      - 🇨🇳 中国 43
-      - 🇨🇳 中国 44
-      - 🇨🇳 中国 45
-      - 🇨🇳 中国 46
-      - 🇨🇳 中国 47
-      - 🇨🇳 中国 48
-      - 🇨🇳 中国 49
-      - 🇨🇳 中国 5
-      - 🇨🇳 中国 50
-      - 🇨🇳 中国 51
-      - 🇨🇳 中国 6
-      - 🇨🇳 中国 7
-      - 🇨🇳 中国 8
-      - 🇨🇳 中国 9
-      - 🇫🇷 法国 1
-      - 🇫🇷 法国 2
-      - 🇫🇷 法国 3
-      - 🇫🇷 法国 4
-      - 🇫🇷 法国 5
       - 🇬🇧 英国 1
       - 🇬🇧 英国 2
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇭🇰 香港 4
-      - 🇭🇰 香港 5
-      - 🇭🇰 香港 6
-      - 🇭🇰 香港 7
-      - 🇭🇰 香港 8
-      - 🇭🇰 香港 9
+      - 🇬🇧 英国 3
+      - 🇬🇧 英国 4
+      - 🇬🇧 英国 5
+      - 🇬🇧 英国 6
+      - 🇬🇧 英国 7
+      - 🇬🇧 英国 8
       - 🇹🇼 台湾 1
-      - 🇺🇳 其他 1
-      - 🇺🇳 其他 2
-      - 🇺🇳 其他 3
+      - 🇹🇼 台湾 2
+      - 🇹🇼 台湾 3
+      - 🇹🇼 台湾 4
+      - 🇹🇼 台湾 5
+      - 🇹🇼 台湾 6
+      - 🇹🇼 台湾 7
       - 🇺🇸 美国 1
       - 🇺🇸 美国 10
       - 🇺🇸 美国 11
       - 🇺🇸 美国 12
       - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
       - 🇺🇸 美国 2
       - 🇺🇸 美国 3
       - 🇺🇸 美国 4
@@ -1182,3 +398,4 @@ proxy-groups:
       - 🇺🇸 美国 7
       - 🇺🇸 美国 8
       - 🇺🇸 美国 9
+      - 🇻🇳 越南 1
