@@ -26,90 +26,64 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
-  - name: 🇹🇼 台湾 1
-    server: 0319tw123.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /nmsl
-      headers:
-        host: 0319tw123.fans8.xyz
-  - name: 🇹🇼 台湾 2
-    server: 0322tw.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /nl
-      headers:
-        host: 0322tw.fans8.xyz
-  - name: 🇹🇼 台湾 3
-    server: 0314tw02.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        host: 0314tw02.fans8.xyz
-  - name: 🇺🇸 美国 1
-    server: cn2.v2jx.site
-    port: 443
-    type: vmess
-    uuid: d716e745-62f8-498e-af97-3a1e096d8c84
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: cn2.v2jx.site
-  - name: 🇬🇧 英国 1
-    server: kr.jddg.me
-    port: 443
-    type: vmess
-    uuid: d716e745-62f8-498e-af97-3a1e096d8c84
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: kr.jddg.me
-  - name: 🇺🇸 美国 2
-    server: 38.114.114.69
-    port: 9101
-    type: ss
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇨🇦 加拿大 1
-    server: 134.195.196.51
-    port: 8000
-    type: ss
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 🇺🇸 美国 3
-    server: 167.88.63.108
+  - name: 🇰🇷 韩国 1
+    server: 158.247.224.121
     port: 7001
     type: ss
+    country: 🇰🇷_KR_韩国_3
     cipher: aes-256-gcm
     password: RexnBgU7EV5ADxG
-  - name: 🇻🇳 越南 1
+  - name: 🇰🇷 韩国 2
+    server: 158.247.224.121
+    port: 2376
+    type: ss
+    country: 🇰🇷_KR_韩国_7
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 🇰🇷 韩国 3
+    server: 158.247.224.121
+    port: 8009
+    type: ss
+    country: 🇰🇷_KR_韩国_10
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 🇺🇸 美国 1
+    server: 155.94.235.108
+    port: 64132
+    type: ss
+    country: 🇺🇸_US_美国_18
+    cipher: aes-256-gcm
+    password: dfMsIC3vOiUhM9tP
+  - name: 🇺🇳 其他 1
+    server: 139.162.122.205
+    port: 3845
+    type: vmess
+    uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
+    alterId: 0
+    cipher: auto
+    tls: false
+  - name: 🇺🇳 其他 2
+    server: chinamobile.ga
+    port: 37344
+    type: vmess
+    uuid: 667bea8e-250e-4763-cb52-1e437356109e
+    alterId: 0
+    cipher: auto
+    tls: true
+  - name: 🇨🇳 中国 1
+    server: in-v1.sdgdn.com
+    port: 50207
+    type: vmess
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /hls/cctv5phd.m3u8
+      headers:
+        Host: in-v1.sdgdn.com
+  - name: 🇺🇳 其他 3
     server: 0319hzm01.fans8.xyz
     port: 443
     type: vmess
@@ -121,281 +95,18 @@ proxies:
     ws-opts:
       path: /nmsl
       headers:
-        host: 0319hzm01.fans8.xyz
-  - name: 🇨🇦 加拿大 2
-    server: 134.195.198.211
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇬🇧 英国 2
-    server: 78.129.253.9
-    port: 809
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 🇺🇸 美国 4
-    server: 169.197.142.99
-    port: 8091
-    type: ss
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 🇨🇦 加拿大 3
-    server: 134.195.196.68
-    port: 6379
-    type: ss
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇺🇸 美国 5
-    server: 38.114.114.69
-    port: 6697
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇺🇸 美国 6
-    server: 169.197.142.99
-    port: 443
-    type: ss
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇬🇧 英国 3
-    server: 172.99.190.92
-    port: 8888
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 7
-    server: 167.88.63.108
-    port: 7002
-    type: ss
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇬🇧 英国 4
-    server: 172.99.190.92
-    port: 6679
-    type: ss
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇨🇦 加拿大 4
-    server: 134.195.196.68
-    port: 7306
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 8
-    server: 38.114.114.69
-    port: 6697
-    type: ss
-    country: 🇺🇸_US_美国_长风分享3月28日_8
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇹🇼 台湾 4
-    server: 0314tw02.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    country: 🇹🇼_TW_台湾_长风分享3月28日_22
-    skip-cert-verify: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        host: 0314tw02.fans8.xyz
-  - name: 🇨🇦 加拿大 5
-    server: 134.195.196.51
-    port: 3389
-    type: ss
-    country: 🇨🇦_CA_加拿大_长风分享3月28日_24
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇬🇧 英国 5
-    server: 172.99.190.92
-    port: 443
-    type: ss
-    country: 🇬🇧_GB_英国_长风分享3月28日_34
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 🇺🇸 美国 9
-    server: 169.197.142.99
-    port: 7002
-    type: ss
-    country: 🇺🇸_US_美国_长风分享3月28日_41
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇹🇼 台湾 5
-    server: 0322tw.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    country: 🇹🇼_TW_台湾_长风分享3月28日_57
-    skip-cert-verify: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: /nl
-      headers:
-        host: 0322tw.fans8.xyz
-  - name: 🇺🇸 美国 10
-    server: 38.114.114.69
-    port: 9101
-    type: ss
-    country: 🇺🇸_US_美国_长风分享3月28日_70
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇺🇸 美国 11
-    server: 167.88.63.108
-    port: 6679
-    type: ss
-    country: 🇺🇸_US_美国_长风分享3月28日_84
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇬🇧 英国 6
-    server: 172.99.190.92
-    port: 8888
-    type: ss
-    country: 🇬🇧_GB_英国_长风分享3月28日_86
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 12
-    server: 169.197.142.99
-    port: 9101
-    type: ss
-    country: 🇺🇸_US_美国_长风分享3月28日_100
-    cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 🇺🇸 美国 13
-    server: 38.114.114.69
-    port: 6697
-    type: ss
-    country: 🇺🇸_US_美国_8
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇬🇧 英国 7
-    server: 172.99.190.92
-    port: 6679
-    type: ss
-    country: 🇬🇧_GB_英国_13
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇺🇸 美国 14
-    server: 169.197.142.99
-    port: 6679
-    type: ss
-    country: 🇺🇸_US_美国_17
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 🇹🇼 台湾 6
-    server: 0314tw02.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    country: 🇹🇼_TW_台湾_22
-    skip-cert-verify: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ray
-      headers:
-        host: 0314tw02.fans8.xyz
-  - name: 🇨🇦 加拿大 6
-    server: 134.195.196.51
-    port: 3389
-    type: ss
-    country: 🇨🇦_CA_加拿大_24
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇨🇦 加拿大 7
-    server: 134.195.196.3
-    port: 3306
-    type: ss
-    country: 🇨🇦_CA_加拿大_30
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 🇺🇸 美国 15
-    server: 38.114.114.69
-    port: 6379
-    type: ss
-    country: 🇺🇸_US_美国_35
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 🇹🇼 台湾 7
-    server: 0322tw.fans8.xyz
-    port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
-    cipher: auto
-    country: 🇹🇼_TW_台湾_57
-    skip-cert-verify: true
-    tls: true
-    network: ws
-    ws-opts:
-      path: /nl
-      headers:
-        host: 0322tw.fans8.xyz
-  - name: 🇬🇧 英国 8
-    server: 172.99.190.92
-    port: 7307
-    type: ss
-    country: 🇬🇧_GB_英国_72
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 🇺🇸 美国 16
-    server: 38.114.114.69
-    port: 8882
-    type: ss
-    country: 🇺🇸_US_美国_2
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
+        Host: 0319hzm01.fans8.xyz
 proxy-groups:
   - name: 自动选择
     interval: 300
     type: select
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 🇨🇦 加拿大 1
-      - 🇨🇦 加拿大 2
-      - 🇨🇦 加拿大 3
-      - 🇨🇦 加拿大 4
-      - 🇨🇦 加拿大 5
-      - 🇨🇦 加拿大 6
-      - 🇨🇦 加拿大 7
-      - 🇬🇧 英国 1
-      - 🇬🇧 英国 2
-      - 🇬🇧 英国 3
-      - 🇬🇧 英国 4
-      - 🇬🇧 英国 5
-      - 🇬🇧 英国 6
-      - 🇬🇧 英国 7
-      - 🇬🇧 英国 8
-      - 🇹🇼 台湾 1
-      - 🇹🇼 台湾 2
-      - 🇹🇼 台湾 3
-      - 🇹🇼 台湾 4
-      - 🇹🇼 台湾 5
-      - 🇹🇼 台湾 6
-      - 🇹🇼 台湾 7
+      - 🇨🇳 中国 1
+      - 🇰🇷 韩国 1
+      - 🇰🇷 韩国 2
+      - 🇰🇷 韩国 3
+      - 🇺🇳 其他 1
+      - 🇺🇳 其他 2
+      - 🇺🇳 其他 3
       - 🇺🇸 美国 1
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 11
-      - 🇺🇸 美国 12
-      - 🇺🇸 美国 13
-      - 🇺🇸 美国 14
-      - 🇺🇸 美国 15
-      - 🇺🇸 美国 16
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
-      - 🇺🇸 美国 7
-      - 🇺🇸 美国 8
-      - 🇺🇸 美国 9
-      - 🇻🇳 越南 1
