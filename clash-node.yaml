@@ -26,87 +26,1006 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
-  - name: 🇰🇷 韩国 1
-    server: 158.247.224.121
-    port: 7001
-    type: ss
-    country: 🇰🇷_KR_韩国_3
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 🇰🇷 韩国 2
-    server: 158.247.224.121
-    port: 2376
-    type: ss
-    country: 🇰🇷_KR_韩国_7
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 🇰🇷 韩国 3
-    server: 158.247.224.121
-    port: 8009
-    type: ss
-    country: 🇰🇷_KR_韩国_10
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 🇺🇸 美国 1
-    server: 155.94.235.108
-    port: 64132
-    type: ss
-    country: 🇺🇸_US_美国_18
-    cipher: aes-256-gcm
-    password: dfMsIC3vOiUhM9tP
+  - type: trojan
+    name: 🇹🇼 台湾 1
+    server: 211.72.35.158
+    port: 3389
+    password: d66013c645b93c5c
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇺🇸 美国 1
+    server: 107.167.24.6
+    port: 17001
+    password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇸🇬 新加坡 1
+    server: s2.hazz.win
+    port: 12340
+    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+    udp: true
+    skip-cert-verify: true
   - name: 🇺🇳 其他 1
-    server: 139.162.122.205
-    port: 3845
-    type: vmess
-    uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 🇺🇳 其他 2
-    server: chinamobile.ga
-    port: 37344
-    type: vmess
-    uuid: 667bea8e-250e-4763-cb52-1e437356109e
-    alterId: 0
-    cipher: auto
-    tls: true
-  - name: 🇨🇳 中国 1
-    server: in-v1.sdgdn.com
-    port: 50207
-    type: vmess
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        Host: in-v1.sdgdn.com
-  - name: 🇺🇳 其他 3
-    server: 0319hzm01.fans8.xyz
+    server: ca-trojan.bonds.id
+    type: trojan
+    country: 🇨🇦CA
     port: 443
-    type: vmess
-    uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
-    alterId: 2
+    password: 28d98ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇳 其他 2
+    server: 185.246.155.29
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+  - name: 🇺🇳 其他 3
+    server: 185.246.155.29
+    port: 9026
+    type: ss
+    cipher: aes-256-cfb
+    password: QWDDvVE9npNurQfA
+  - name: 🇺🇳 其他 4
+    server: 185.246.155.29
+    port: 9080
+    type: ss
+    cipher: aes-256-cfb
+    password: VP8ZPxQpJtZRCjfZ
+  - name: 🇺🇸 美国 2
+    server: us-trojan.bonds.id
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    password: ccf1ee40-b4ab-11eb-b421-1239d0255272
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇳 其他 5
+    server: v.9051246.xyz
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    password: "18825786"
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇳 其他 6
+    server: 45.78.5.173
+    port: 57998
+    type: ss
+    cipher: aes-256-gcm
+    password: 5AsJpT36WpdWbv5r
+    udp: true
+  - type: trojan
+    name: 🇸🇬 新加坡 2
+    server: s2.hazz.win
+    port: 12340
+    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇨🇦 加拿大 1
+    server: ca-trojan.bonds.id
+    port: 443
+    password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇺🇸 美国 3
+    server: 107.167.24.6
+    port: 17001
+    password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇨🇳 中国 1
+    server: 211.72.35.158
+    port: 3389
+    password: d66013c645b93c5c
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇨🇳 中国 2
+    server: 120.233.186.204
+    port: 3383
+    password: d66013c645b93c5c
+    udp: true
+    skip-cert-verify: true
+  - type: vmess
+    name: 🇨🇳 中国 3
+    ws-opts:
+      path: /v2ray
+      headers:
+        host: microsoft.com
+    server: iplchk.znetnodes.com
+    port: "22030"
+    uuid: 9c2acfcb-8ae3-3d4c-b6b2-b115f1ab6dc3
+    alterId: "0"
     cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇯🇵 日本 1
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: jp01.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇯🇵 日本 2
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: jp02.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇨🇳 中国 4
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: tw02.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇺🇸 美国 4
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: us01.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇺🇸 美国 5
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: us02.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇸🇬 新加坡 3
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: sg01.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇸🇬 新加坡 4
+    ws-opts:
+      path: /live
+      headers:
+        host: cctv.com
+    server: sg02.henet.cyou
+    port: "20000"
+    uuid: a64899d8-6261-4e97-baf1-d304591a33c6
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇰🇷 韩国 1
+    ws-opts:
+      path: /es/gogogo
+      headers:
+        host: "cat194.officeys.com\r\n"
+    server: cat194.officeys.com
+    port: "443"
+    uuid: c026994d-2ecb-31d2-afd2-360404690665
+    alterId: "0"
+    cipher: auto
+    network: ws
     tls: true
+  - type: vmess
+    name: 🇰🇷 韩国 2
+    ws-opts:
+      path: /es/gogogo
+      headers:
+        host: "cat195.officeys.com\r\n"
+    server: cat195.officeys.com
+    port: "443"
+    uuid: c026994d-2ecb-31d2-afd2-360404690665
+    alterId: "0"
+    cipher: auto
+    network: ws
+    tls: true
+  - type: trojan
+    name: 🇩🇪 德国 1
+    server: s4.hazz.win
+    port: 12340
+    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+    udp: true
+    skip-cert-verify: true
+  - type: trojan
+    name: 🇨🇳 中国 5
+    server: hkt.n.optage.moe
+    port: 44609
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: hkt.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 6
+    server: shcu.alinkrelay.com
+    port: 44607
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: id.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 7
+    server: azhk.r.optage.moe
+    port: 44605
+    password: b31aa5cc-0a59-4dfa-8370-a7789bb0ba80
+    udp: true
+    skip-cert-verify: true
+    sni: cdn.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 8
+    server: azhk.r.optage.moe
+    port: 44607
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: id.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 9
+    server: azhk.r.optage.moe
+    port: 44609
+    password: b31aa5cc-0a59-4dfa-8370-a7789bb0ba80
+    udp: true
+    skip-cert-verify: true
+    sni: hkt.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 10
+    server: azhk.n.optage.moe
+    port: 44602
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: cdn.qchwnd.moe
+  - type: trojan
+    name: 🇸🇬 新加坡 5
+    server: linsg.n.optage.moe
+    port: 44605
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: cdn.qchwnd.moe
+  - type: trojan
+    name: 🇮🇩 印尼 1
+    server: id.n.optage.moe
+    port: 44607
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: id.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 11
+    server: azhk.r.optage.moe
+    port: 44612
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: fr.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 12
+    server: azhk.r.optage.moe
+    port: 44613
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: uk.node.qchwnd.moe
+  - type: trojan
+    name: 🇫🇷 法国 1
+    server: fr.n.optage.moe
+    port: 44612
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: fr.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 13
+    server: shcu.alinkrelay.com
+    port: 44606
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: ru.node.qchwnd.moe
+  - type: trojan
+    name: 🇺🇸 美国 6
+    server: usgt.n.optage.moe
+    port: 44610
+    password: b31aa5cc-0a59-4dfa-8370-a7789bb0ba80
+    udp: true
+    skip-cert-verify: true
+    sni: usgt.node.qchwnd.moe
+  - type: trojan
+    name: 🇨🇳 中国 14
+    server: azhk.r.optage.moe
+    port: 44606
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: ru.node.qchwnd.moe
+  - type: trojan
+    name: 🇺🇸 美国 7
+    server: uk.n.optage.moe
+    port: 44613
+    password: 12dbfb53-1249-47e6-bf2c-795a92727034
+    udp: true
+    skip-cert-verify: true
+    sni: uk.node.qchwnd.moe
+  - type: vmess
+    name: 🇨🇳 中国 15
+    ws-opts:
+      path: /
+      headers:
+        host: shoutingtoutiao3.10010.com
+    server: 222.186.56.102
+    port: "80"
+    uuid: b5daf031-befa-4411-a105-e8385a849085
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: 🇺🇸 美国 8
+    server: 173.82.226.27
+    port: "23662"
+    uuid: efa2ab76-539d-4b6a-9572-24ba709fb81b
+    alterId: "0"
+    cipher: auto
+    network: ws
+  - name: 🇻🇳 越南 1
+    server: hn6.sos4g.xyz
+    port: 80
+    type: vmess
+    uuid: 88feb3a4-8dd9-4001-91d6-9cceabca5a4b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /nmsl
+      path: /sos4g.xyz
       headers:
-        Host: 0319hzm01.fans8.xyz
+        Host: sos.akamaized.net
+  - name: 🇸🇬 新加坡 6
+    server: 159.223.48.47
+    port: 80
+    type: vmess
+    uuid: 751b7ae2-49b3-4950-97a2-145f2ab7a228
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: N.akamaized.net
+  - name: 🇻🇳 越南 2
+    server: 0001.hcm.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇻🇳 越南 3
+    server: 0001.hn.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇺🇸 美国 9
+    server: 0001.hk.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇺🇸 美国 10
+    server: 0001.us.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇰🇷 韩国 3
+    server: 0001.kr.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇯🇵 日本 3
+    server: 0001.jp.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇺🇸 美国 11
+    server: 0001.au.genzpn.com
+    port: 80
+    type: vmess
+    uuid: 568a40cb-6c4b-4bd3-a80f-a5233529817b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dl.ops.kgvn.garenanow.com.akamaized.net
+  - name: 🇨🇳 中国 16
+    server: pass1.jiasuyuan.shop
+    port: 63211
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 17
+    server: pass2.jiasuyuan.shop
+    port: 63221
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 18
+    server: pass4.jiasuyuan.shop
+    port: 33341
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 19
+    server: pass5.jiasuyuan.shop
+    port: 33342
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 20
+    server: mg01.caiyuanzi.life
+    port: 63214
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 21
+    server: mg02.caiyuanzi.life
+    port: 63224
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 22
+    server: sg01.caiyuanzi.life
+    port: 63212
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 23
+    server: sg02.caiyuanzi.life
+    port: 63222
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 24
+    server: tw01.beibei456.xyz
+    port: 33351
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 25
+    server: tw02.beibei456.xyz
+    port: 33352
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 26
+    server: jp01.tgdaili.xyz
+    port: 63213
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 27
+    server: jp02.tgdaili.xyz
+    port: 63223
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 28
+    server: teq.caiyuanzi.life
+    port: 32002
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 29
+    server: dg.tgdaili.xyz
+    port: 32003
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 30
+    server: hg.tgdaili.xyz
+    port: 32000
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 31
+    server: hg01.beibei456.xyz
+    port: 29000
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 32
+    server: hg02.beibei456.xyz
+    port: 29001
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 33
+    server: yg01.beibei456.xyz
+    port: 41000
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 34
+    server: yg02.beibei456.xyz
+    port: 41001
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 68a401ed-9403-4d69-a564-aeba67204b35
+  - name: 🇨🇳 中国 35
+    server: ur8alxqduvurv6zc.9739b14d-4c18-4074-a8ff-61ad9d373187.chinatelecom.rip
+    port: 38731
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 36
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23701
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 37
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23713
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 38
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 23715
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 39
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23716
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 40
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23717
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 41
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23721
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 42
+    server: ur8alxqduvurv6zc.9739b14d-4c18-4074-a8ff-61ad9d373187.chinatelecom.rip
+    port: 38741
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 43
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23722
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 44
+    server: ur8alxqduvurv6zc.9739b14d-4c18-4074-a8ff-61ad9d373187.chinatelecom.rip
+    port: 38742
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 45
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23723
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 46
+    server: zp6tab.08bd683a-fa21-4579-8762-d45fed6806cd.chinaunicom.rip
+    port: 23725
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 47
+    server: zp6tab.08bd683a-fa21-4579-8762-d45fed6806cd.chinaunicom.rip
+    port: 23726
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 48
+    server: ur8alxqduvurv6zc.9739b14d-4c18-4074-a8ff-61ad9d373187.chinatelecom.rip
+    port: 38753
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 49
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23735
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 50
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23741
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 51
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 23742
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 52
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27351
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 53
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27352
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 54
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27353
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 55
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27401
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 56
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27402
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 57
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27403
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 58
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27404
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 59
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27405
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 60
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27406
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 61
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27408
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 62
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27409
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 63
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27411
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 64
+    server: zp6tab.08bd683a-fa21-4579-8762-d45fed6806cd.chinaunicom.rip
+    port: 27412
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 65
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27413
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 66
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27414
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 67
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27415
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 68
+    server: ub46na.1ebcb461-be59-4987-873b-16eabc26daa6.chinaunicom.rip
+    port: 27416
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇨🇳 中国 69
+    server: r5dETB.07ec8396-39f6-43d1-ad67-b16f671711d0.chinaunicom.rip
+    port: 27417
+    type: ss
+    cipher: aes-256-gcm
+    password: 60632-qwewe269378-XFmHXfNzGhdAB5XtgxBmtycC945xasht
+  - name: 🇯🇵 日本 4
+    server: 141.147.180.121
+    port: 80
+    type: vmess
+    uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 141.147.180.121
+  - name: 🇨🇳 中国 70
+    server: 14.29.124.174
+    port: 11039
+    type: ss
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
+  - name: 🇻🇳 越南 4
+    server: 103.27.62.138
+    port: 46453
+    type: vmess
+    uuid: 4d392ee8-9a75-4026-8016-14985df00fb2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇨🇳 中国 71
+    server: 14.29.124.174
+    port: 11033
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
+  - type: ss
+    name: 🇨🇳 中国 72
+    server: 14.29.124.174
+    port: 11036
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
+  - type: ss
+    name: 🇨🇳 中国 73
+    server: 14.29.124.174
+    port: 11037
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
+  - type: ss
+    name: 🇨🇳 中国 74
+    server: 14.29.124.174
+    port: 11009
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
+  - type: ss
+    name: 🇨🇳 中国 75
+    server: 14.29.124.174
+    port: 11049
+    cipher: aes-128-cfb
+    password: QazEdcTgb159@$*
 proxy-groups:
   - name: 自动选择
     interval: 300
     type: select
     url: http://www.gstatic.com/generate_204
     proxies:
+      - 🇨🇦 加拿大 1
       - 🇨🇳 中国 1
+      - 🇨🇳 中国 10
+      - 🇨🇳 中国 11
+      - 🇨🇳 中国 12
+      - 🇨🇳 中国 13
+      - 🇨🇳 中国 14
+      - 🇨🇳 中国 15
+      - 🇨🇳 中国 16
+      - 🇨🇳 中国 17
+      - 🇨🇳 中国 18
+      - 🇨🇳 中国 19
+      - 🇨🇳 中国 2
+      - 🇨🇳 中国 20
+      - 🇨🇳 中国 21
+      - 🇨🇳 中国 22
+      - 🇨🇳 中国 23
+      - 🇨🇳 中国 24
+      - 🇨🇳 中国 25
+      - 🇨🇳 中国 26
+      - 🇨🇳 中国 27
+      - 🇨🇳 中国 28
+      - 🇨🇳 中国 29
+      - 🇨🇳 中国 3
+      - 🇨🇳 中国 30
+      - 🇨🇳 中国 31
+      - 🇨🇳 中国 32
+      - 🇨🇳 中国 33
+      - 🇨🇳 中国 34
+      - 🇨🇳 中国 35
+      - 🇨🇳 中国 36
+      - 🇨🇳 中国 37
+      - 🇨🇳 中国 38
+      - 🇨🇳 中国 39
+      - 🇨🇳 中国 4
+      - 🇨🇳 中国 40
+      - 🇨🇳 中国 41
+      - 🇨🇳 中国 42
+      - 🇨🇳 中国 43
+      - 🇨🇳 中国 44
+      - 🇨🇳 中国 45
+      - 🇨🇳 中国 46
+      - 🇨🇳 中国 47
+      - 🇨🇳 中国 48
+      - 🇨🇳 中国 49
+      - 🇨🇳 中国 5
+      - 🇨🇳 中国 50
+      - 🇨🇳 中国 51
+      - 🇨🇳 中国 52
+      - 🇨🇳 中国 53
+      - 🇨🇳 中国 54
+      - 🇨🇳 中国 55
+      - 🇨🇳 中国 56
+      - 🇨🇳 中国 57
+      - 🇨🇳 中国 58
+      - 🇨🇳 中国 59
+      - 🇨🇳 中国 6
+      - 🇨🇳 中国 60
+      - 🇨🇳 中国 61
+      - 🇨🇳 中国 62
+      - 🇨🇳 中国 63
+      - 🇨🇳 中国 64
+      - 🇨🇳 中国 65
+      - 🇨🇳 中国 66
+      - 🇨🇳 中国 67
+      - 🇨🇳 中国 68
+      - 🇨🇳 中国 69
+      - 🇨🇳 中国 7
+      - 🇨🇳 中国 70
+      - 🇨🇳 中国 71
+      - 🇨🇳 中国 72
+      - 🇨🇳 中国 73
+      - 🇨🇳 中国 74
+      - 🇨🇳 中国 75
+      - 🇨🇳 中国 8
+      - 🇨🇳 中国 9
+      - 🇩🇪 德国 1
+      - 🇫🇷 法国 1
+      - 🇮🇩 印尼 1
+      - 🇯🇵 日本 1
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇯🇵 日本 4
       - 🇰🇷 韩国 1
       - 🇰🇷 韩国 2
       - 🇰🇷 韩国 3
+      - 🇸🇬 新加坡 1
+      - 🇸🇬 新加坡 2
+      - 🇸🇬 新加坡 3
+      - 🇸🇬 新加坡 4
+      - 🇸🇬 新加坡 5
+      - 🇸🇬 新加坡 6
+      - 🇹🇼 台湾 1
       - 🇺🇳 其他 1
       - 🇺🇳 其他 2
       - 🇺🇳 其他 3
+      - 🇺🇳 其他 4
+      - 🇺🇳 其他 5
+      - 🇺🇳 其他 6
       - 🇺🇸 美国 1
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇻🇳 越南 1
+      - 🇻🇳 越南 2
+      - 🇻🇳 越南 3
+      - 🇻🇳 越南 4
