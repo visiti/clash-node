@@ -26,296 +26,440 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,自动选择
 proxies:
+  - type: trojan
+    name: 🇲🇴 澳门 1
+    server: 45.64.22.55
+    port: 443
+    password: NqYpxKxB8A5jnDaISe834lAOaTwEOYzCeSD7CSZyFa0C3ypcR2F9XD3ug36lZR
+    udp: true
+    skip-cert-verify: true
+    sni: pbvre.freetrade.link
+  - type: trojan
+    name: 🇮🇩 印尼 1
+    server: idc1.vpn-akcelluler.my.id
+    port: 443
+    password: idc117okt
+    udp: true
+    skip-cert-verify: true
+    sni: idc1.vpn-akcelluler.my.id
+  - type: trojan
+    name: 🇮🇩 印尼 2
+    server: 103.226.139.201
+    port: 443
+    password: idc117okt
+    udp: true
+    skip-cert-verify: true
   - name: 🇺🇳 其他 1
-    server: 95.169.4.174
-    port: 254
-    type: ss
-    cipher: aes-256-cfb
-    password: bwhskrskr06
+    password: 7x42LetRa0
+    port: 1443
+    server: 106.180.225.69
+    skip-cert-verify: true
+    type: trojan
     udp: true
+    uuid: 610f9780-84b3-6767-c21c-2bdc35565c89
+    success_rate: 100
+    minimum: 63.69
+    maximum: 100.02
+    average: 87.53
+    UpdateDay: 2022-09-30T09:32:03.711477
+    PFirstFoundDay: 2022-03-11T23:05:01.549769
+    Rank: 264577
   - name: 🇺🇳 其他 2
-    server: 164.92.99.255
-    type: ss
-    country: 🇺🇸US
-    port: 4649
-    password: 3f411e87-3e93-4f23-bc22-263a748bc8c5
-    cipher: aes-256-gcm
+    password: f42e1a2e-e650-44f4-8d17-bcb68663da18
+    port: 443
+    server: www.seetheworldjp.ga
+    type: trojan
+    success_rate: 100
+    minimum: 50.99
+    maximum: 64.88
+    average: 57.86
+    UpdateDay: 2022-04-03T15:12:54.472724
+    PFirstFoundDay: 2022-03-11T21:01:49.367854
+    Rank: 166513
   - name: 🇺🇳 其他 3
-    server: jike-vip-02.xyz
+    server: www.gomacau.gq
     type: trojan
-    country: 🇳🇱NL
+    country: 🇺🇸 US
     port: 443
-    password: q8uTrVmj95aTrFAa
+    password: b5fc9fa9-796d-4185-a316-395ecac04a85
     skip-cert-verify: true
     udp: true
+    success_rate: 100
+    minimum: 60.88
+    maximum: 62.02
+    average: 61.31
+    UpdateDay: 2022-04-02T15:35:09.325376
+    PFirstFoundDay: 2022-03-14T10:28:14.224892
+    Rank: 122782
   - name: 🇺🇳 其他 4
-    server: 23.225.77.187
-    type: trojan
-    country: 🇺🇸 US
-    port: 28443
-    password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇳 其他 5
-    server: 23.225.77.226
-    type: trojan
-    country: 🇺🇸 US
-    port: 28443
-    password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇳 其他 6
-    server: 23.224.33.72
-    type: trojan
-    country: 🇺🇸US
-    port: 28000
-    password: 2cee2f05-9351-4a6d-9f80-ff859a54a0b3
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇳 其他 7
-    server: 23.225.77.222
-    type: trojan
-    country: 🇺🇸 US
-    port: 28443
-    password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 1
-    server: tj-us02.yiyodns.xyz
-    port: 443
-    type: trojan
-    password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-    sni: tj-us02.yiyodns.xyz
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇳 其他 8
-    server: 45.78.5.173
-    port: 57998
-    type: ss
-    cipher: aes-256-gcm
-    password: 5AsJpT36WpdWbv5r
-    udp: true
-  - name: 🇺🇳 其他 9
-    server: 154.17.28.38
-    type: vmess
-    country: 🇺🇸US
-    port: 49353
-    uuid: f762694a-948b-4918-a657-6ca9b10f2d32
-    alterId: 233
-    cipher: auto
-    network: tcp
-    ws-path: /getweather
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-  - name: 🇺🇸 美国 2
-    server: s3.hazz.win
-    type: trojan
-    country: 🇺🇸US
-    port: 12340
-    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 3
-    server: tj-us02.yiyodns.xyz
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬 新加坡 1
-    server: s1.hazz.win
-    type: trojan
-    country: 🇺🇸US
-    port: 12340
-    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-    skip-cert-verify: true
-    udp: true
-  - name: 🇸🇬 新加坡 2
-    server: s2.hazz.win
-    type: trojan
-    country: 🇸🇬 SG
-    port: 12340
-    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇳 中国 1
-    server: 29d78fe.nf.gladns.com
+    server: 117.164.185.222
+    port: 21005
     type: trojan
     country: 🇨🇳 CN
-    port: 3389
-    password: 8c72bafbd4837610
+    password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇳 中国 2
-    server: azgy001.xiba1.xyz
+    success_rate: 100
+    minimum: 19.23
+    maximum: 46.6
+    average: 28.5
+    UpdateDay: 2022-09-29T15:30:28.509281
+    PFirstFoundDay: 2022-09-12T00:32:41.388118
+    Rank: 52773
+  - name: 🇺🇳 其他 5
+    server: fujimount02.abzoones.xyz
+    port: 36106
     type: trojan
-    country: 🇭🇰 HK
-    port: 20710
-    password: 7497242f-3044-3c77-bf48-14bb26c92a83
+    country: 🇨🇳 CN
+    password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
     skip-cert-verify: true
     udp: true
-  - name: 🇨🇳 中国 3
-    server: azgy001.xiba1.xyz
+    success_rate: 100
+    minimum: 19.77
+    maximum: 79.49
+    average: 43.81
+    UpdateDay: 2022-09-29T15:30:28.011192
+    PFirstFoundDay: 2022-09-12T00:32:41.394588
+    Rank: 45451
+  - name: 🇺🇳 其他 6
+    password: 4f7dc540-d244-4e64-af21-4b5bb300add3
+    port: 443
+    server: www.tokyo2023.ga
+    skip-cert-verify: true
     type: trojan
-    country: 🇭🇰 HK
-    port: 20712
-    password: 7497242f-3044-3c77-bf48-14bb26c92a83
-    skip-cert-verify: true
     udp: true
-  - name: 🇨🇳 中国 4
-    server: azgy001.xiba1.xyz
+    uuid: 7b86934b-eaed-16ad-fd74-0f24e80d9d4e
+    success_rate: 100
+    minimum: 45.63
+    maximum: 59.06
+    average: 53.83
+    UpdateDay: 2022-09-30T09:32:03.611059
+    PFirstFoundDay: 2022-03-14T10:29:40.191643
+    Rank: 41564
+  - name: 🇺🇳 其他 7
+    server: cn2hn.sub-nthu.com
+    port: 35003
     type: trojan
-    country: 🇭🇰 HK
-    port: 20711
-    password: 7497242f-3044-3c77-bf48-14bb26c92a83
+    country: 🇨🇳 CN
+    password: eda8a8e5-1076-4d7b-b1d0-5003a0350073
     skip-cert-verify: true
     udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: 🇩🇪 德国 1
-    password: Ultr@r00t_2017
-    port: 811
-    server: 161.35.69.20
-    type: ss
-  - cipher: aes-256-cfb
-    name: 🇸🇬 新加坡 3
-    password: 1e5111699c45496da84112f35db665c4
-    port: 29332
-    server: 165.232.169.142
-    type: ss
-  - cipher: aes-128-cfb
-    name: 🇨🇳 中国 5
-    password: QazEdcTgb159@$*
-    port: 25245
-    server: 14.29.124.168
-    type: ss
-  - cipher: aes-128-cfb
-    name: 🇨🇳 中国 6
-    password: QazEdcTgb159@$*
-    port: 25256
-    server: 14.29.124.168
-    type: ss
-  - cipher: aes-128-cfb
-    name: 🇨🇳 中国 7
-    password: QazEdcTgb159@$*
-    port: 25207
-    server: 14.29.124.168
-    type: ss
-  - cipher: aes-128-cfb
-    name: 🇨🇳 中国 8
-    password: QazEdcTgb159@$*
-    port: 25241
-    server: 14.29.124.168
-    type: ss
-  - cipher: aes-128-cfb
-    name: 🇨🇳 中国 9
-    password: QazEdcTgb159@$*
-    port: 11012
-    server: 14.29.124.174
-    type: ss
-  - cipher: aes-256-cfb
-    name: 🇺🇳 其他 10
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 46.183.185.15
-    type: ss
+    success_rate: 100
+    minimum: 9.24
+    maximum: 14.07
+    average: 12.32
+    UpdateDay: 2022-09-29T15:30:27.833784
+    PFirstFoundDay: 2022-06-06T12:34:15.587806
+    Rank: 37094
+  - name: 🇺🇳 其他 8
+    server: fujimount01.abzoones.xyz
+    port: 36116
+    type: trojan
+    country: 🇨🇳 CN
+    password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 25.58
+    maximum: 60.96
+    average: 39.83
+    UpdateDay: 2022-09-29T15:30:28.448170
+    PFirstFoundDay: 2022-09-12T00:32:41.419114
+    Rank: 35130
+  - name: 🇺🇳 其他 9
+    password: 41742_920c8caa
+    port: 443
+    server: hk31.ssgnode.ga
+    skip-cert-verify: true
+    type: trojan
+    udp: true
+    uuid: 124fa720-163b-ac62-04ca-bc0b5754b230
+    success_rate: 100
+    minimum: 101.44
+    maximum: 110.7
+    average: 106.68
+    UpdateDay: 2022-09-30T09:32:03.771373
+    PFirstFoundDay: 2022-03-13T18:24:14.435896
+    Rank: 28693
+  - name: 🇺🇳 其他 10
+    server: sunmoon02.abzoones.xyz
+    port: 36306
+    type: trojan
+    country: 🇨🇳 CN
+    password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 19.94
+    maximum: 30.84
+    average: 26.18
+    UpdateDay: 2022-09-29T15:30:28.023412
+    PFirstFoundDay: 2022-09-12T00:32:41.400611
+    Rank: 25451
   - name: 🇺🇳 其他 11
-    password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22
+    password: 8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
     port: 443
-    server: 41.216.177.41
+    server: 185.44.76.188
     skip-cert-verify: true
     type: trojan
     udp: true
+    uuid: d7405728-e25f-c165-7fdb-b6575b83df76
+    success_rate: 100
+    minimum: 199.66
+    maximum: 227.77
+    average: 209.32
+    UpdateDay: 2022-08-25T12:32:07.765989
+    PFirstFoundDay: 2022-08-25T12:32:07.765993
+    Rank: 21519
   - name: 🇺🇳 其他 12
-    password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+    password: 28d98f761aca9d636f44db62544628eb
     port: 443
-    server: tj-us02.yiyodns.xyz
+    server: 45.66.134.219
     skip-cert-verify: true
     type: trojan
     udp: true
+    uuid: 1d407d8c-d053-d711-94eb-5ac2d32d3588
+    success_rate: 100
+    minimum: 43.3
+    maximum: 59.07
+    average: 48.82
+    UpdateDay: 2022-09-30T09:32:03.636617
+    PFirstFoundDay: 2022-09-25T09:32:40.474459
+    Rank: 20347
   - name: 🇺🇳 其他 13
-    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-    port: 12340
-    server: s1.hazz.win
-    skip-cert-verify: true
+    server: sunmoon01.abzoones.xyz
+    port: 36301
     type: trojan
+    country: 🇨🇳 CN
+    password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
+    skip-cert-verify: true
     udp: true
+    success_rate: 100
+    minimum: 23.32
+    maximum: 33.44
+    average: 28.56
+    UpdateDay: 2022-09-28T21:30:12.122362
+    PFirstFoundDay: 2022-09-12T00:32:41.419501
+    Rank: 13892
   - name: 🇺🇳 其他 14
-    password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-    port: 12340
-    server: s4.hazz.win
+    server: www.cjf0423.cf
+    port: 443
+    type: trojan
+    country: 🇺🇸 US
+    password: "111111"
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 45.74
+    maximum: 65.31
+    average: 54.09
+    UpdateDay: 2022-09-29T15:30:28.079382
+    PFirstFoundDay: 2022-09-12T00:32:43.496454
+    Rank: 10798
+  - name: 🇺🇳 其他 15
+    server: bauhinia01.abzoones.xyz
+    port: 36501
+    type: trojan
+    country: 🇨🇳 CN
+    password: 9771dfe86
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 23.36
+    maximum: 28.37
+    average: 25.78
+    UpdateDay: 2022-09-29T15:30:28.884645
+    PFirstFoundDay: 2022-09-25T12:31:14.849467
+    Rank: 4318
+  - name: 🇺🇳 其他 16
+    password: 3fb3b8b4e9
+    port: 443
+    server: 37.123.192.9
     skip-cert-verify: true
     type: trojan
     udp: true
-  - name: 🇨🇳 中国 10
+    uuid: 271cf454-8aa8-8c47-2f4e-6c48870ce907
+    success_rate: 100
+    minimum: 150.07
+    maximum: 150.94
+    average: 150.64
+    UpdateDay: 2022-07-08T06:30:39.635171
+    PFirstFoundDay: 2022-06-27T03:31:21.731817
+    Rank: 3274
+  - type: trojan
+    name: 🇺🇳 其他 17
+    server: 183.245.146.6
+    port: 21001
+    password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3
+    udp: true
+    skip-cert-verify: true
+    sni: 65-108-102-32.nhost.00cdn.com
+    success_rate: 100
+    minimum: 18.89
+    maximum: 26.54
+    average: 23.22
+    UpdateDay: 2022-10-26T03:32:44.727355
+    PFirstFoundDay: 2022-10-25T12:32:39.937050
+    Rank: 568
+  - name: 🇺🇳 其他 18
+    password: f41e6f27-5a33-4eb0-b6be-eb3755c93b78
+    port: 443
+    server: jp-04.tiktokcdn.sbs
+    skip-cert-verify: false
+    type: trojan
+    uuid: d22061d2-cc88-b8d9-48c6-74a843e7dcec
+    success_rate: 100
+    minimum: 135.04
+    maximum: 140.57
+    average: 138.67
+    UpdateDay: 2022-11-04T18:32:20.336720
+    PFirstFoundDay: 2022-11-04T15:32:26.617540
+    Rank: -60
+  - name: 🇺🇳 其他 19
+    server: ygzyd.sub-nthu.com
+    port: 35000
+    type: trojan
+    country: 🇨🇳 CN
+    password: eda8a8e5-1076-4d7b-b1d0-5003a0350073
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 12.22
+    maximum: 13.68
+    average: 13.04
+    UpdateDay: 2022-09-29T15:30:27.806367
+    PFirstFoundDay: 2022-06-06T12:34:15.598076
+    Rank: -680
+  - name: 🇺🇸 美国 1
+    password: e785e5d2-a05e-486c-8b4f-78b205382b4e
+    port: 443
+    server: ussj.iamnotagoodman.com
+    skip-cert-verify: true
+    type: trojan
+    udp: true
+    uuid: 4c24be08-9232-fc7f-3fea-9bd969e40d8d
+    success_rate: 100
+    minimum: 36.81
+    maximum: 47.52
+    average: 40.91
+    UpdateDay: 2022-11-02T18:51:10.302401
+    PFirstFoundDay: 2022-11-02T12:32:25.172258
+    Rank: -1354
+  - cipher: aes-128-gcm
+    name: 🇺🇳 其他 20
+    password: "202211000000000000000020"
+    plugin: obfs
+    plugin-opts:
+      host: securevpn.cc
+      mode: http
+    port: 1020
+    server: sg.securevpn.cc
     type: ss
-    server: 14.29.124.168
-    password: QazEdcTgb159@$*
-    port: 25219
-    cipher: aes-128-cfb
-  - name: 🇨🇳 中国 11
-    type: ss
-    server: 14.29.124.168
-    password: QazEdcTgb159@$*
-    port: 25217
-    cipher: aes-128-cfb
-  - name: 🇷🇺 俄罗斯 1
-    type: ss
-    server: 185.4.65.6
-    password: vDS9G2p
-    port: 21247
-    cipher: aes-256-cfb
-  - name: 🇨🇳 中国 12
-    type: ss
-    server: 14.29.124.174
-    password: QazEdcTgb159@$*
-    port: 11041
-    cipher: aes-128-cfb
-  - name: 🇩🇪 德国 2
-    type: ss
-    server: 46.183.185.15
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    cipher: aes-256-cfb
-  - name: 🇨🇳 中国 13
-    type: ss
-    server: 14.29.124.174
-    password: QazEdcTgb159@$*
-    port: 11047
-    cipher: aes-128-cfb
+    udp: true
+    uuid: 17039804-1960-cfeb-2237-e96185014c40
+    success_rate: 100
+    minimum: 237.79
+    maximum: 362.27
+    average: 312.72
+    UpdateDay: 2022-11-05T12:32:44.487849
+    PFirstFoundDay: 2022-11-04T03:31:52.941920
+    Rank: -2960
+  - name: 🇺🇳 其他 21
+    password: idc117okt
+    port: 443
+    server: 103.176.78.153
+    skip-cert-verify: true
+    type: trojan
+    udp: true
+    uuid: f3562cb7-0641-0f22-c3de-b9d986fec0da
+    success_rate: 100
+    minimum: 124.3
+    maximum: 133.01
+    average: 128.55
+    UpdateDay: 2022-10-26T03:32:45.052312
+    PFirstFoundDay: 2022-10-24T03:31:54.019177
+    Rank: -4229
+  - name: 🇺🇳 其他 22
+    server: 103.173.155.72
+    port: 28443
+    type: trojan
+    country: 🏁 ZZ
+    password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4
+    skip-cert-verify: true
+    udp: true
+    success_rate: 100
+    minimum: 251.01
+    maximum: 263.21
+    average: 257.92
+    UpdateDay: 2022-09-29T15:30:28.533430
+    PFirstFoundDay: 2022-06-09T06:34:57.503154
+    Rank: -5031
+  - name: 🇺🇳 其他 23
+    password: idc117okt
+    port: 443
+    server: 103.226.139.201
+    skip-cert-verify: true
+    type: trojan
+    udp: true
+    uuid: 43e64858-f68c-89ce-bce5-54040226a5df
+    success_rate: 100
+    minimum: 135.18
+    maximum: 1155.02
+    average: 479.21
+    UpdateDay: 2022-11-02T18:51:11.617426
+    PFirstFoundDay: 2022-10-30T15:31:21.812158
+    Rank: -8414
+  - type: trojan
+    name: 🇲🇴 澳门 2
+    server: 45.64.22.55
+    port: 443
+    password: NqYpxKxB8A5jnDaISe834lAOaTwEOYzCeSD7CSZyFa0C3ypcR2F9XD3ug36lZR
+    udp: true
+    skip-cert-verify: true
+    sni: pbvre.freetrade.link
+  - type: trojan
+    name: 🇮🇩 印尼 3
+    server: idc1.vpn-akcelluler.my.id
+    port: 443
+    password: idc117okt
+    udp: true
+    skip-cert-verify: true
+    sni: idc1.vpn-akcelluler.my.id
+  - type: trojan
+    name: 🇮🇩 印尼 4
+    server: 103.226.139.201
+    port: 443
+    password: idc117okt
+    udp: true
+    skip-cert-verify: true
 proxy-groups:
   - name: 自动选择
     interval: 300
     type: select
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 🇨🇳 中国 1
-      - 🇨🇳 中国 10
-      - 🇨🇳 中国 11
-      - 🇨🇳 中国 12
-      - 🇨🇳 中国 13
-      - 🇨🇳 中国 2
-      - 🇨🇳 中国 3
-      - 🇨🇳 中国 4
-      - 🇨🇳 中国 5
-      - 🇨🇳 中国 6
-      - 🇨🇳 中国 7
-      - 🇨🇳 中国 8
-      - 🇨🇳 中国 9
-      - 🇩🇪 德国 1
-      - 🇩🇪 德国 2
-      - 🇷🇺 俄罗斯 1
-      - 🇸🇬 新加坡 1
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
+      - 🇮🇩 印尼 1
+      - 🇮🇩 印尼 2
+      - 🇮🇩 印尼 3
+      - 🇮🇩 印尼 4
+      - 🇲🇴 澳门 1
+      - 🇲🇴 澳门 2
       - 🇺🇳 其他 1
       - 🇺🇳 其他 10
       - 🇺🇳 其他 11
       - 🇺🇳 其他 12
       - 🇺🇳 其他 13
       - 🇺🇳 其他 14
+      - 🇺🇳 其他 15
+      - 🇺🇳 其他 16
+      - 🇺🇳 其他 17
+      - 🇺🇳 其他 18
+      - 🇺🇳 其他 19
       - 🇺🇳 其他 2
+      - 🇺🇳 其他 20
+      - 🇺🇳 其他 21
+      - 🇺🇳 其他 22
+      - 🇺🇳 其他 23
       - 🇺🇳 其他 3
       - 🇺🇳 其他 4
       - 🇺🇳 其他 5
@@ -324,5 +468,3 @@ proxy-groups:
       - 🇺🇳 其他 8
       - 🇺🇳 其他 9
       - 🇺🇸 美国 1
-      - 🇺🇸 美国 2
-      - 🇺🇸 美国 3
